@@ -1,1 +1,27 @@
-
+[
+  {
+    "id": "1",
+    "name": "Lionel Messi",
+    "searchName": "lionel messi messi",
+    "rating": 83,
+    "position": "SS",
+    "card-bg": "legendary-non-max-card.png",
+    "border": "Legendary-non-max-border.png",
+    "photo": "Messi-L83.png",
+    "rating_circle": "NonMax-80-89.png",
+    "flag": "ar.png",
+		"star": "Legendary-nonmax.png
+  },
+  {
+    "id": "p002",
+    "name": "Cristiano Ronaldo",
+    "searchName": "cristiano ronaldo ronaldo cr7",
+    "rating": 96,
+    "position": "CF",
+    "card_bg": "gold.png",
+    "border": "legend_border.png",
+    "photo": "ronaldo.png",
+    "rating_circle": "circle_blue.png",
+    "flag": "portugal.png"
+  }
+]
