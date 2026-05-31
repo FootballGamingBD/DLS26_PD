@@ -1,0 +1,184 @@
+// ১. গিটহাব থেকে কার্ডের জন্য CSS স্টাইল লোড করা
+const style = document.createElement('style');
+style.textContent = `
+  .dls-card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* মেইন কার্ড কন্টেইনার */
+  .dls-player-card {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* বর্ডার ইমেজ (কার্ডের একদম উপরে থাকবে) */
+  .card-border-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none; /* যাতে ইমেজের ওপর ক্লিক করা যায় */
+  }
+
+  /* রেটিং সার্কেল (যেমন: NonMax-80-89.png) */
+  .card-rating-circle {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 4;
+  }
+
+  /* রেটিং টেক্সট (সার্কেলের ঠিক মাঝখানে বসবে) */
+  .card-rating-text {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 55px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 4;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  }
+
+  /* পজিশন বক্স (যেমন: SS, CF) */
+  .card-position-box {
+    position: absolute;
+    top: 95px;
+    left: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+    z-index: 4;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  }
+
+  /* দেশের পতাকা (Flag) */
+  .card-flag-img {
+    position: absolute;
+    top: 125px;
+    left: 30px;
+    width: 30px;
+    height: 20px;
+    object-fit: contain;
+    z-index: 4;
+  }
+
+  /* স্টার বা রেয়ারিটি ইমেজ (Star) */
+  .card-star-img {
+    position: absolute;
+    top: 155px;
+    left: 32px;
+    width: 25px;
+    object-fit: contain;
+    z-index: 4;
+  }
+
+  /* প্লেয়ারের অরিজিনাল ছবি (Photo) */
+  .card-player-photo {
+    position: absolute;
+    bottom: 90px;
+    right: 10px;
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    z-index: 3;
+  }
+
+  /* প্লেয়ারের নাম */
+  .card-player-name {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  }
+`;
+document.head.appendChild(style);
+
+// ২. ব্লগার থেকে কল করার জন্য মেইন সার্চ সিস্টেম
+window.initDLSSearch = function(elements) {
+  const inputEl = document.getElementById(elements.inputId);
+  const btnEl = document.getElementById(elements.btnId);
+  const resultEl = document.getElementById(elements.resultId);
+
+  if (!inputEl || !btnEl || !resultEl) return;
+
+  btnEl.addEventListener('click', () => {
+    // searchName এর সাথে মেলানোর জন্য lowercase করা হচ্ছে
+    const query = inputEl.value.toLowerCase().trim();
+    if (!query) {
+      resultEl.innerHTML = "<p style='color:red; text-align:center;'>দয়া করে প্লেয়ারের নাম লিখুন!</p>";
+      return;
+    }
+
+    fetch(elements.jsonUrl)
+      .then(response => response.json())
+      .then(players => {
+        // আপনার নতুন searchName ফিল্ডের সাথে মিলানো হচ্ছে
+        const player = players.find(p => p.searchName.toLowerCase().includes(query));
+        
+        if (player) {
+          // ইমেজের রুট ডিরেক্টরি (আপনার গিটহাবের অ্যাসেটস ফোল্ডারের লিঙ্ক এখানে সেট করতে পারেন)
+          const imgBase = elements.imageBaseUrl || "";
+
+          resultEl.innerHTML = `
+            <div class="dls-card-wrapper">
+              <!-- ব্যাকগ্রাউন্ড ইমেজ ডাইনামিকালি সেট হচ্ছে -->
+              <div class="dls-player-card" style="background-image: url('${imgBase}${player['card-bg']}');">
+                
+                <!-- কার্ড বর্ডার -->
+                <img class="card-border-img" src="${imgBase}${player.border}" alt="Border">
+                
+                <!-- রেটিং সার্কেল ও টেক্সট -->
+                <img class="card-rating-circle" src="${imgBase}${player.rating_circle}" alt="Rating Circle">
+                <div class="card-rating-text">${player.rating}</div>
+                
+                <!-- পজিশন -->
+                <div class="card-position-box">${player.position}</div>
+                
+                <!-- ফ্ল্যাগ বা দেশ -->
+                <img class="card-flag-img" src="${imgBase}${player.flag}" alt="Flag">
+                
+                <!-- স্টার -->
+                <img class="card-star-img" src="${imgBase}${player.star}" alt="Star">
+                
+                <!-- প্লেয়ার ফটো -->
+                <img class="card-player-photo" src="${imgBase}${player.photo}" alt="${player.name}">
+                
+                <!-- প্লেয়ার নেম -->
+                <div class="card-player-name">${player.name}</div>
+                
+              </div>
+            </div>
+          `;
+        } else {
+          resultEl.innerHTML = "<p style='color:red; text-align:center;'>প্লেয়ার পাওয়া যায়নি!</p>";
+        }
+      })
+      .catch(err => {
+        console.error("Error fetching data:", err);
+        resultEl.innerHTML = "<p style='color:red; text-align:center;'>ডাটাবেজ লোড করতে সমস্যা হয়েছে!</p>";
+      });
+  });
+};
