@@ -110,5 +110,43 @@
     "max-rating-circle": "Max-90-1000.png",
     "bio": "লিওনেল মেসি ২০১২ সালে এক ক্যালেন্ডার ইয়ারে সর্বোচ্চ ৯১টি গোল করে বিশ্বরেকর্ড গড়েন। এটি তার ক্যারিয়ারের অন্যতম সেরা লিজেন্ডারি পারফরম্যান্স কার্ড।",
     "stats": { "SPE": 88, "ACC": 92, "STA": 82, "STR": 82, "CON": 95, "PAS": 90, "SHT": 94, "TAC": 42 }
+  },
+  {
+  "id": 5,
+  "name": "Messi",
+  "searchName": "Lionel Andrés Messi",
+  "slug": "messi-2022",
+  "rating": 87,
+  "Position-box": "ss.png",
+  "card-bg": "World-nonmax-card.png",
+  "border": "world-nonmax-border.png",
+  "rating_circle": "Nonmax-80-90.png",
+  "game-card-bg": "Special.jpg",
+  "photo": "W-ronaldo.jpg",
+  "flag": "ar.png",
+  "star": "Champion-star.png",
+  "year_box": "World-year.png",
+  "year": "2022",
+  "club": "",
+  "nationality": "Argentina",
+  "height": "170 cm",
+  "weight": "70kg",
+  "age": "36",
+  "foot": "Left",
+  "max-card": "World-max-card.png",
+  "max-border": "World-nonmax-border.png",
+  "max-rating-circle": "Max-90-1000.png",
+  "bio": "লিওনেল মেসি ২০২২ সালে আর্জেন্টিনার হয়ে ফিফা বিশ্বকাপ জয় করেন এবং টুর্নামেন্টের সেরা খেলোয়াড় হিসেবে গোল্ডেন বল লাভ করেন।",
+  "stats": {
+    "SPE": 81,
+    "ACC": 91,
+    "STA": 80,
+    "STR": 68,
+    "CON": 95,
+    "PAS": 93,
+    "SHT": 93,
+    "TAC": 45
   }
+}
+
 ]
