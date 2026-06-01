@@ -1,4 +1,4 @@
-// ক্যানভাস ভিত্তিক DLS কার্ড জেনারেটর ইঞ্জিন
+// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন
 window.initDLSSearch = function(elements) {
   const inputEl = document.getElementById(elements.inputId);
   const btnEl = document.getElementById(elements.btnId);
@@ -6,32 +6,32 @@ window.initDLSSearch = function(elements) {
 
   if (!inputEl || !btnEl || !resultEl) return;
 
-  // ফন্ট ফেস লোড নিশ্চিত করার জন্য পেজে ইনজেক্ট করা হলো
-  if (!document.getElementById('dls-font-style')) {
-    const fontStyle = document.createElement('style');
-    fontStyle.id = 'dls-font-style';
-    fontStyle.textContent = `
+  // ব্রাউজারে ফন্ট এবং রেসপন্সিভ ক্যানভাস স্টাইল ইনজেক্ট করা
+  if (!document.getElementById('dls-canvas-style')) {
+    const style = document.createElement('style');
+    style.id = 'dls-canvas-style';
+    style.textContent = `
       @font-face {
           font-family: 'DLS Font';
           src: url('https://cdn.jsdelivr.net/gh/FootballGamingBD/Dls@main/dls_font.ttf') format('truetype');
-          font-weight: normal;
+          font-weight: 900;
           font-style: normal;
           font-display: swap;
       }
       .canvas-container {
          display: flex;
          justify-content: center;
-         margin: 20px auto;
+         margin: 25px auto;
       }
       .canvas-container canvas {
          max-width: 100%;
          height: auto;
-         width: 320px; /* ব্লগারে দেখানোর জন্য স্ট্যান্ডার্ড ডিসপ্লে সাইজ */
+         width: 300px; /* ব্লগারে রেস্পন্সিভ ডিসপ্লে সাইজ */
          border-radius: 14px;
-         box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+         box-shadow: 0 10px 25px rgba(0,0,0,0.4);
       }
     `;
-    document.head.appendChild(fontStyle);
+    document.head.appendChild(style);
   }
 
   btnEl.addEventListener('click', () => {
@@ -41,42 +41,39 @@ window.initDLSSearch = function(elements) {
       return;
     }
 
-    // প্লেয়ার ডাটা ফেচ করা
+    resultEl.innerHTML = "<p style='color:#fff; text-align:center; font-family:sans-serif;'>কার্ড তৈরি হচ্ছে...</p>";
+
     fetch(elements.jsonUrl)
       .then(response => response.json())
       .then(players => {
+        // searchName দিয়ে প্লেয়ার খোঁজা
         const player = players.find(p => p.searchName.toLowerCase().includes(query));
         
         if (player) {
-          resultEl.innerHTML = "<p style='color:#fff; text-align:center;'>কার্ড তৈরি হচ্ছে...</p>";
-          
           const base = elements.imageBaseUrl;
 
-          // ১. ইমেজ পাথ বা লিঙ্ক তৈরি (আপনার ফোল্ডার স্ট্রাকচার অনুযায়ী)
-          let photoName = player.photo;
-          if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; // হাইফেন ফিক্স
-
+          // আপনার ফোল্ডার স্ট্রাকচার অনুযায়ী সঠিক ইউআরএল ম্যাপিং
           const urls = {
             bg: `${base}Card-bg/${player['card-bg']}`,
             border: `${base}Card-border/${player.border}`,
             circle: `${base}Rating-circle/${player.rating_circle}`,
-            photo: `${base}Player-photos/${photoName}`,
+            photo: `${base}Player-photos/${player.photo}`,
             flag: `${base}Flags/${player.flag}`,
             star: `${base}Star/${player.star}`
           };
 
-          // ইমেজ লোডার প্রমিস ফাংশন
+          // ইমেজ লোড করার প্রমিস ফাংশн (CORS হ্যান্ডেলসহ)
           const loadImage = (src) => {
             return new Promise((resolve, reject) => {
               const img = new Image();
-              img.crossOrigin = "anonymous"; // CORS ইস্যু এড়াতে
+              img.crossOrigin = "anonymous"; 
               img.onload = () => resolve(img);
-              img.onerror = () => reject(new Error("Image load failed: " + src));
+              img.onerror = () => reject(new Error("Failed to load: " + src));
               img.src = src;
             });
           };
 
-          // সব ইমেজ একসাথে লোড হলে ক্যানভাসে ড্র করা শুরু হবে
+          // সব ইমেজ ব্যাকগ্রাউন্ডে লোড হওয়ার পর ক্যানভাসে ড্র হবে
           Promise.all([
             loadImage(urls.bg),
             loadImage(urls.border),
@@ -86,78 +83,73 @@ window.initDLSSearch = function(elements) {
             loadImage(urls.star)
           ]).then(([bgImg, borderImg, circleImg, photoImg, flagImg, starImg]) => {
             
-            // ক্যানভাস তৈরি (আপনার স্ট্যান্ডার্ড ২০০০ × ২০০০ সাইজ)
+            // আপনার স্ট্যান্ডার্ড ২০০০ × ২০০০ সাইজের ক্যানভাস তৈরি
             const canvas = document.createElement('canvas');
             canvas.width = 2000;
             canvas.height = 2000;
             const ctx = canvas.getContext('2d');
 
-            // ১. ব্যাকগ্রাউন্ড কার্ড ড্র (Card-bg)
+            // ১. ব্যাকগ্রাউন্ড ইমেজ ড্র (Card-bg)
             ctx.drawImage(bgImg, 0, 0, 2000, 2000);
 
-            // ২. প্লেয়ার ছবি ডাইনামিক পজিশন লজিক (আপনার কোড অনুযায়ী)
-            // প্লেয়ার কার্ডের টাইপ ডাইনামিকালি ডিটেক্ট করা (ডিফল্ট ট্রিপল কন্ডিশন সেট)
-            let pX = 622; 
-            let pY = 191; 
-            let pSize = 980;
-
+            // ২. প্লেয়ারের ছবি পজিশন (টাইপ অনুযায়ী ডাইনামিক লজিক)
+            let type = player['card-bg'].toLowerCase();
+            let pX = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 622 : 406;
+            let pY = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 191 : -26;
+            let pSize = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 980 : 1200;
+            
             ctx.drawImage(photoImg, pX, pY, pSize, pSize);
 
-            // ৩. কার্ড বর্ডার ড্র (Card-border)
+            // ৩. বর্ডার ইমেজ ড্র (Card-border)
             ctx.drawImage(borderImg, 0, 0, 2000, 2000);
 
-            // ৪. রেটিং সার্কেল (ফিক্সড ৪৩০, ২৬০)
+            // ৪. রেটিং সার্কেল ড্র (Rating-circle) - ফিক্সড পজিশন ৪৩০, ২৬০
             ctx.drawImage(circleImg, 430, 260, 450, 450);
 
-            // ৫. রেটিং নাম্বারের নিখুঁত পজিশন ও কাস্টম ফন্ট স্টাইল
+            // ৫. রেটিং টেক্সট (নিখুঁত পজিশন ও শ্যাডো)
             ctx.save();
             ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
             ctx.shadowBlur = 10; 
             ctx.shadowOffsetY = 5;
             ctx.fillStyle = "white"; 
-            ctx.font = "900 190px 'DLS Font'";  
+            ctx.font = "900 190px 'DLS Font', sans-serif";  
             ctx.textAlign = "center";
-            ctx.fillText(player.rating, 655, 565); 
+            ctx.fillText(player.rating, 655, 565); // X: 655, Y: 565
             ctx.restore();
 
-            // ৬. প্লেয়ারের নাম ড্র করার লজিক (১০০০, ১৩৪৫)
+            // ৬. প্লেয়ারের নাম ড্র (১০০০, ১৩४৫)
             ctx.save();
-            // নাম সাদা বা কালো হবে তা ডিটেক্ট করা (ডিফল্ট কালার ব্ল্যাক)
-            let nameColor = "black";
-            if (player['card-bg'] && (player['card-bg'].includes('kickoff') || player['card-bg'].includes('legendary'))) {
-              nameColor = "white"; // লেজেন্ডারি বা কিকঅফ হলে টেক্সট হোয়াইট হবে
-            }
+            // থিম অনুযায়ী ডাইনামিক নাম কালার সিলেক্ট
+            let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
             
             ctx.shadowColor = (nameColor === "white") ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.3)";
             ctx.shadowBlur = 8; 
             ctx.shadowOffsetY = 4;
             ctx.fillStyle = nameColor; 
-            ctx.font = "900 150px 'DLS Font'"; 
+            ctx.font = "900 150px 'DLS Font', sans-serif"; 
             ctx.textAlign = "center";
-            ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
+            ctx.fillText(player.name.toUpperCase(), 1000, 1345); // X: 1000, Y: 1345
             ctx.restore();
 
-            // ৭. দেশের ফ্ল্যাগ (Flag) ড্র করার পজিশন (৭২৫, ১৪৪০)
+            // ৭. দেশের ফ্ল্যাগ (Flag) ড্র (৭২৫, ১৪৪০)
             ctx.drawImage(flagImg, 725, 1440, 253, 168);
 
-            // ৮. প্লেয়ার পজিশন ব্যাজ বা টেক্সট ড্র
-            // যেহেতু পজিশন লিঙ্কের ইমেজ এখনো সেট হয়নি, তাই ক্যানভাসে টেক্সট আকারে ড্র করা হলো (CF, ST ইত্যাদি)
+            // ৮. প্লেয়ার পজিশন টেক্সট ব্যাজ (যেমন: SS, CF)
             ctx.save();
-            ctx.fillStyle = "#e10600"; // পজিশন ব্যাকগ্রাউন্ড রেড
-            ctx.font = "900 110px 'DLS Font'";
-            ctx.textAlign = "left";
             ctx.fillStyle = "white";
-            ctx.fillText(player.position.toUpperCase(), 1020, 1565);
+            ctx.font = "900 110px 'DLS Font', sans-serif";
+            ctx.textAlign = "left";
+            ctx.fillText(player.position.toUpperCase(), 1040, 1565); // পজিশন টেক্সট এলাইনমেন্ট ফিক্স
             ctx.restore();
 
-            // ৯. রেয়ারিটি স্টার বা নিচে থাকা স্টার (মাঝখানে এলাইনড)
+            // ৯. স্টার ড্র করার লজিক (১৬১০)
             const starWidth = 180;   
             const starHeight = 180;  
             const starYOffset = 1610; 
             let sX = (2000 - starWidth) / 2;
             ctx.drawImage(starImg, sX, starYOffset, starWidth, starHeight);
 
-            // আউটপুট ডিভে ক্যানভাসটি পুশ করা
+            // ফাইনাল ক্যানভাস স্ক্রিনে পুশ করা
             resultEl.innerHTML = '';
             const container = document.createElement('div');
             container.className = 'canvas-container';
@@ -166,7 +158,7 @@ window.initDLSSearch = function(elements) {
 
           }).catch(err => {
             console.error(err);
-            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>ছবিগুলো গিটহাব থেকে লোড হতে ব্যর্থ হয়েছে!</p>";
+            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Assets ফোল্ডার থেকে ছবি লোড করা যায়নি!</p>";
           });
 
         } else {
