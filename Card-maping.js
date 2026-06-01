@@ -144,14 +144,7 @@ window.initDLSSearch = function(elements) {
             // ৮. পজিশন ব্যাজ ফ্রেম ড্র (আপনার স্ট্যান্ডার্ড কোড পজিশন: X: 955, Y: 1320, W: 400, H: 400)
             ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
-            // ৯. পজিশন ফ্রেমের ভেতরে টেক্সট এলাইনমেন্ট (সেন্টারড লজিক)
-            ctx.save();
-            ctx.fillStyle = "white";
-            ctx.font = "900 110px 'DLS Font'";
-            ctx.textAlign = "center";
-            // ফ্রেমের উইডথ ৪০০ হওয়ায় ৯৫৫ + (৪০০/২) = ১১৫৫ হচ্ছে পারফেক্ট মিডল এক্স-পজিশন
-            ctx.fillText(player.position.toUpperCase(), 1155, 1555); 
-            ctx.restore();
+            
 
             // ১০. রেয়ারিটি বা গোল্ডেন স্টার ড্র (X: সেন্টারে, Y: ১৬১০)
             const starWidth = 180;   
