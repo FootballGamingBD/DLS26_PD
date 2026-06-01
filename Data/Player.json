@@ -4,13 +4,12 @@
     "name": "Lionel Messi",
     "searchName": "lionel messi messi",
     "rating": 83,
-    "position": "ss",
+    "position": "ss.png",
     "card-bg": "Legendary-non-max-card.png",
     "border": "Legendary-non-max-border.png",
     "photo": "Messi-L-83.webp",
     "rating_circle": "NonMax-80-89.png",
     "flag": "ar.png",
-	"position-box": "ss.png",
 		"star": "Legendary-nonmax.png"
   },
   {
