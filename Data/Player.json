@@ -13,6 +13,19 @@
     "star": "Legendary-nonmax.png"
   },
   {
+    "id": "2",
+    "name": "Lionel Messi",
+    "searchName": "lionel messi messi",
+    "rating": 88,
+    "position": "SS",
+    "card-bg": "Champions-non-max-card.png",
+    "border": "Champion-non-max-border.png",
+    "photo": "Messi-c-88.webp",
+    "rating_circle": "NonMax-80-89.png",
+    "flag": "ar.png",
+    "star": "Legendary-nonmax.png"
+  },
+  {
     "id": "p002",
     "name": "Ronaldo",
     "searchName": "cristiano ronaldo ronaldo",
