@@ -1,4 +1,4 @@
-// ১. কার্ডের উপাদানগুলোর নিখুঁত পজিশন ও সাইজ (আপনার দেওয়া ইমেজ অনুযায়ী)
+// ১. কার্ডের উপাদানগুলোর পজিশন ও সাইজ (CSS)
 const style = document.createElement('style');
 style.textContent = `
   .dls-card-wrapper {
@@ -17,10 +17,12 @@ style.textContent = `
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    background-color: transparent; /* ব্যাকগ্রাউন্ড ইমেজ না আসা পর্যন্ত টেস্ট করার জন্য */
   }
 
-  /* বর্ডার ইমেজ (কার্ডের একদম উপরে ফিট হবে) */
+  /* বর্ডার ইমেজ */
   .card-border-img {
     position: absolute;
     top: 0;
@@ -41,7 +43,7 @@ style.textContent = `
     z-index: 4;
   }
 
-  /* রেটিং টেক্সট (সার্কেলের ঠিক মাঝখানে) */
+  /* রেটিং টেক্সট */
   .card-rating-text {
     position: absolute;
     top: 66px;
@@ -55,10 +57,10 @@ style.textContent = `
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
   }
 
-  /* প্লেয়ার ফটো (পেছনের ব্যাকগ্রাউন্ডের সাথে ফিট হবে) */
+  /* প্লেয়ার ফটো */
   .card-player-photo {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 15px;
     width: 170px;
     height: 220px;
@@ -111,7 +113,7 @@ style.textContent = `
     box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   }
 
-  /* পজিশন বক্স (যেমন: CF) */
+  /* পজিশন বক্স */
   .card-position-box {
     background: #e10600;
     color: #ffffff;
@@ -123,7 +125,7 @@ style.textContent = `
     box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   }
 
-  /* নিচে থাকা স্টার বা রেয়ারিটি */
+  /* নিচে থাকা স্টার */
   .card-star-img {
     position: absolute;
     bottom: 12px;
@@ -136,7 +138,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ২. মেইন ডাটা সার্চ এবং জেনারেটর ইঞ্জিন
+// ২. মেইন ডেটা সার্চ এবং ইউআরএল হ্যান্ডলিং ইঞ্জিন
 window.initDLSSearch = function(elements) {
   const inputEl = document.getElementById(elements.inputId);
   const btnEl = document.getElementById(elements.btnId);
@@ -159,35 +161,41 @@ window.initDLSSearch = function(elements) {
         if (player) {
           const base = elements.imageBaseUrl;
 
-          // ফোল্ডারের নামের স্পেসগুলো ঠিকভাবে রেন্ডার করার জন্য encodeURIComponent ব্যবহার করা হয়েছে
-          const bgUrl = `${base}${encodeURIComponent('Card bg')}/${player['card-bg']}`;
-          const borderUrl = `${base}${encodeURIComponent('Card border')}/${player.border}`;
-          const ratingCircleUrl = `${base}${encodeURIComponent('Rating-circle')}/${player.rating_circle}`;
-          const photoUrl = `${base}${encodeURIComponent('Player photos')}/${player.photo}`;
-          const flagUrl = `${base}${encodeURIComponent('Flags')}/${player.flag}`;
-          const starUrl = `${base}${encodeURIComponent('Star')}/${player.star}`;
+          // আপনার গিটহাব স্ক্রিনশটের ফোল্ডার নেম অনুযায়ী স্পেস ও বড়/ছোট হাতের অক্ষর হুবহু মেলানো হয়েছে
+          const bgUrl = `${base}Card%20bg/${player['card-bg']}`;
+          const borderUrl = `${base}Card%20border/${player.border}`;
+          const ratingCircleUrl = `${base}Rating-circle/${player.rating_circle}`;
+          const photoUrl = `${base}Player%20photos/${player.photo}`;
+          const flagUrl = `${base}Flags/${player.flag}`;
+          const starUrl = `${base}Star/${player.star}`;
 
           resultEl.innerHTML = `
             <div class="dls-card-wrapper">
               <div class="dls-player-card" style="background-image: url('${bgUrl}');">
                 
-                <img class="card-border-img" src="${borderUrl}" alt="Border">
+                <!-- কার্ড বর্ডার -->
+                <img class="card-border-img" src="${borderUrl}" alt="Border" onerror="this.style.display='none'">
                 
-                <img class="card-rating-circle" src="${ratingCircleUrl}" alt="Circle">
+                <!-- রেটিং সার্কেল ও নম্বর -->
+                <img class="card-rating-circle" src="${ratingCircleUrl}" alt="Circle" onerror="this.style.display='none'">
                 <div class="card-rating-text">${player.rating}</div>
                 
+                <!-- প্লেয়ার ফটো -->
                 <img class="card-player-photo" src="${photoUrl}" alt="${player.name}">
                 
+                <!-- নাম প্লেট স্ট্রিপ -->
                 <div class="card-name-plate">
                   <div class="card-player-name">${player.name}</div>
                 </div>
                 
+                <!-- ফ্ল্যাগ ও পজিশন -->
                 <div class="card-bottom-row">
-                  <img class="card-flag-img" src="${flagUrl}" alt="Flag">
+                  <img class="card-flag-img" src="${flagUrl}" alt="Flag" onerror="this.style.display='none'">
                   <div class="card-position-box">${player.position}</div>
                 </div>
                 
-                <img class="card-star-img" src="${starUrl}" alt="Star">
+                <!-- রেয়ারিটি স্টার -->
+                <img class="card-star-img" src="${starUrl}" alt="Star" onerror="this.style.display='none'">
                 
               </div>
             </div>
