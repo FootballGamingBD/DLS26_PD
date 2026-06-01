@@ -64,7 +64,7 @@ window.initDLSSearch = function(elements) {
             circle: `${base}Rating-circle/${player.rating_circle}`,
             photo: `${base}Player-photos/${photoName}`,
             flag: `${base}Flags/${player.flag}`,
-            posBox: `${base}Position-box/${posImgName}`, // নতুন পজিশন باکس ফোল্ডার লিঙ্ক
+            posBox: `${base}Position-box/${posImgName}`, // নতুন পজিশন বক্স ফোল্ডার লিঙ্ক
             star: `${base}Star/${player.star}`
           };
 
@@ -105,6 +105,83 @@ window.initDLSSearch = function(elements) {
             let pX = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 622 : 406;
             let pY = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 191 : -26;
             let pSize = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 980 : 1200;
+            
+            ctx.drawImage(photoImg, pX, pY, pSize, pSize);
+
+            // ৩. বর্ডার ইমেজ ড্র
+            ctx.drawImage(borderImg, 0, 0, 2000, 2000);
+
+            // ৪. রেটিং সার্কেল ড্র (ফিক্সড ৪৩০, ২৬০)
+            ctx.drawImage(circleImg, 430, 260, 450, 450);
+
+            // ৫. রেটিং টেক্সট (X: 655, Y: 565)
+            ctx.save();
+            ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
+            ctx.shadowBlur = 10; 
+            ctx.shadowOffsetY = 5;
+            ctx.fillStyle = "white"; 
+            ctx.font = "900 190px 'DLS Font'";  
+            ctx.textAlign = "center";
+            ctx.fillText(player.rating, 655, 565); 
+            ctx.restore();
+
+            // ৬. প্লেয়ারের নাম ড্র (X: 1000, Y: 1345)
+            ctx.save();
+            let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
+            
+            ctx.shadowColor = (nameColor === "white") ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.3)";
+            ctx.shadowBlur = 8; 
+            ctx.shadowOffsetY = 4;
+            ctx.fillStyle = nameColor; 
+            ctx.font = "900 150px 'DLS Font'"; 
+            ctx.textAlign = "center";
+            ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
+            ctx.restore();
+
+            // ৭. দেশের ফ্ল্যাগ ড্র (X: 725, Y: 1440, W: 253, H: 168)
+            ctx.drawImage(flagImg, 725, 1440, 253, 168);
+
+            // ৮. পজিশন ব্যাজ ফ্রেম ড্র (আপনার স্ট্যান্ডার্ড কোড পজিশন: X: 955, Y: 1320, W: 400, H: 400)
+            ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
+
+            // ৯. পজিশন ফ্রেমের ভেতরে টেক্সট এলাইনমেন্ট (সেন্টারড লজিক)
+            ctx.save();
+            ctx.fillStyle = "white";
+            ctx.font = "900 110px 'DLS Font'";
+            ctx.textAlign = "center";
+            // ফ্রেমের উইডথ ৪০০ হওয়ায় ৯৫৫ + (৪০০/২) = ১১৫৫ হচ্ছে পারফেক্ট মিডল এক্স-পজিশন
+            ctx.fillText(player.position.toUpperCase(), 1155, 1555); 
+            ctx.restore();
+
+            // ১০. রেয়ারিটি বা গোল্ডেন স্টার ড্র (X: সেন্টারে, Y: ১৬১০)
+            const starWidth = 180;   
+            const starHeight = 180;  
+            const starYOffset = 1610; 
+            let sX = (2000 - starWidth) / 2;
+            ctx.drawImage(starImg, sX, starYOffset, starWidth, starHeight);
+
+            // ক্যানভাস আউটপুট ব্লগারে পুশ করা
+            resultEl.innerHTML = '';
+            const container = document.createElement('div');
+            container.className = 'canvas-container';
+            container.appendChild(canvas);
+            resultEl.appendChild(container);
+
+          }).catch(err => {
+            console.error(err);
+            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Position-box বা অন্য কোনো Asset লোড হতে সমস্যা হয়েছে!</p>";
+          });
+
+        } else {
+          resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>প্লেয়ার পাওয়া যায়নি!</p>";
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>ডাটাবেজ কানেক্ট করতে সমস্যা হয়েছে!</p>";
+      });
+  });
+};
             
             ctx.drawImage(photoImg, pX, pY, pSize, pSize);
 
