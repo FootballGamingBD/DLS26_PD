@@ -34,11 +34,11 @@
     "card-bg": "Champion-max-card.png",
     "border": "champion-max-border.png",
     "photo": "Messi-c-88.webp",
-    "rating_circle": "NonMax-80-89.png",
+    "rating_circle": "Nonmax-80-89.png",
     "flag": "ar.png",
     "star": "Legendary-nonmax.png",
-    "year-box": "Year-c25",
-    "year": "2026"
+    "Year-box": "Year-c25",
+    "Year": "2026"
   },
   {
     "id": "p002",
