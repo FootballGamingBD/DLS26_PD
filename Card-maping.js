@@ -26,7 +26,7 @@ window.initDLSSearch = function(elements) {
       .canvas-container canvas {
          max-width: 100%;
          height: auto;
-         width: 300px; /* ব্লগারে রেস্পন্সিভ ডিসপ্লে সাইজ */
+         width: 300px; 
          border-radius: 14px;
          box-shadow: 0 10px 25px rgba(0,0,0,0.4);
       }
@@ -43,31 +43,34 @@ window.initDLSSearch = function(elements) {
 
     resultEl.innerHTML = "<p style='color:#fff; text-align:center; font-family:sans-serif;'>কার্ড তৈরি হচ্ছে...</p>";
 
-    fetch(elements.jsonUrl)
+    // মাস্টার ট্রিক: লিঙ্কের সাথে টাইমস্ট্যাম্প যোগ করা হয়েছে যাতে গিটহাবে পুশ করার সাথে সাথে ইনস্ট্যান্ট নতুন ডাটা লোড হয়
+    const freshJsonUrl = elements.jsonUrl.split('?')[0] + "?v=" + Date.now();
+
+    fetch(freshJsonUrl)
       .then(response => response.json())
       .then(players => {
         const player = players.find(p => p.searchName.toLowerCase().includes(query));
         
         if (player) {
+          // ইমেজগুলোর ক্ষেত্রেও ক্যাশ বাইপাস করা হলো যাতে নতুন ছবি দিলে সাথে সাথে আসে
           const base = elements.imageBaseUrl;
+          const cacheBuster = "?v=" + Date.now();
 
           let photoName = player.photo;
-          if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; // হাইফেন ফিক্স
+          if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; 
 
-          // পজিশন ইমেজ নাম (যেমন: ss.png, cf.png)
           let posImgName = player.position_box ? player.position_box : `${player.position.toLowerCase()}.png`;
 
           const urls = {
-            bg: `${base}Card-bg/${player['card-bg']}`,
-            border: `${base}Card-border/${player.border}`,
-            circle: `${base}Rating-circle/${player.rating_circle}`,
-            photo: `${base}Player-photos/${photoName}`,
-            flag: `${base}Flags/${player.flag}`,
-            posBox: `${base}Position-box/${posImgName}`, 
-            star: `${base}Star/${player.star}`
+            bg: `${base}Card-bg/${player['card-bg']}${cacheBuster}`,
+            border: `${base}Card-border/${player.border}${cacheBuster}`,
+            circle: `${base}Rating-circle/${player.rating_circle}${cacheBuster}`,
+            photo: `${base}Player-photos/${photoName}${cacheBuster}`,
+            flag: `${base}Flags/${player.flag}${cacheBuster}`,
+            posBox: `${base}Position-box/${posImgName}${cacheBuster}`, 
+            star: `${base}Star/${player.star}${cacheBuster}`
           };
 
-          // ইমেজ লোডার ফাংশন
           const loadImage = (src) => {
             return new Promise((resolve, reject) => {
               const img = new Image();
@@ -78,7 +81,6 @@ window.initDLSSearch = function(elements) {
             });
           };
 
-          // সব এসেট একসাথে লোড করা
           Promise.all([
             document.fonts.load("190px 'DLS Font'"), 
             loadImage(urls.bg),
@@ -90,30 +92,22 @@ window.initDLSSearch = function(elements) {
             loadImage(urls.star)
           ]).then(([fontStatus, bgImg, borderImg, circleImg, photoImg, flagImg, posBoxImg, starImg]) => {
             
-            // ২০০০ × ২০০০ ক্যানভাস তৈরি
             const canvas = document.createElement('canvas');
             canvas.width = 2000;
             canvas.height = 2000;
             const ctx = canvas.getContext('2d');
 
-            // ১. ব্যাকগ্রাউন্ড ইমেজ ড্র
             ctx.drawImage(bgImg, 0, 0, 2000, 2000);
 
-            // ২. প্লেয়ারের ছবি পজিশন
             let type = player['card-bg'].toLowerCase();
             let pX = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 622 : 406;
             let pY = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 191 : -26;
             let pSize = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 980 : 1200;
             
             ctx.drawImage(photoImg, pX, pY, pSize, pSize);
-
-            // ৩. বর্ডার ইমেজ ড্র
             ctx.drawImage(borderImg, 0, 0, 2000, 2000);
-
-            // ৪. রেটিং সার্কেল ড্র
             ctx.drawImage(circleImg, 430, 260, 450, 450);
 
-            // ۵. রেটিং টেক্সট ড্র
             ctx.save();
             ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
             ctx.shadowBlur = 10; 
@@ -124,10 +118,8 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.rating, 655, 565); 
             ctx.restore();
 
-            // ৬. প্লেয়ারের নাম ড্র
             ctx.save();
             let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
-            
             ctx.shadowColor = (nameColor === "white") ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.3)";
             ctx.shadowBlur = 8; 
             ctx.shadowOffsetY = 4;
@@ -137,20 +129,15 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
             ctx.restore();
 
-            // ৭. দেশের ফ্ল্যাগ ড্র
             ctx.drawImage(flagImg, 725, 1440, 253, 168);
-
-            // ৮. পজিশন বক্স ইমেজ ড্র (লেখা টেক্সট রিমুভড, শুধু ইমেজ বক্স ড্র হবে)
             ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
-            // ৯. রেয়ারিটি বা গোল্ডেন স্টার ড্র
             const starWidth = 180;   
             const starHeight = 180;  
             const starYOffset = 1610; 
             let sX = (2000 - starWidth) / 2;
             ctx.drawImage(starImg, sX, starYOffset, starWidth, starHeight);
 
-            // ক্যানভাস আউটপুট ব্লগারে পুশ করা
             resultEl.innerHTML = '';
             const container = document.createElement('div');
             container.className = 'canvas-container';
@@ -159,7 +146,7 @@ window.initDLSSearch = function(elements) {
 
           }).catch(err => {
             console.error(err);
-            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Asset লোড হতে সমস্যা হয়েছে!</p>";
+            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Asset লোড হতে সমস্যা হয়েছে! গিটহাবে ফাইলের নাম বা এক্সটেনশন চেক করুন।</p>";
           });
 
         } else {
