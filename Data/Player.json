@@ -13,6 +13,19 @@
     "star": "Legendary-nonmax.png"
   },
   {
+    "id": "4",
+    "name": "Lionel Messi",
+    "searchName": "lionel messi messi1 283",
+    "rating": 98,
+    "Position-box": "rw.png",
+    "card-bg": "Legendary-max-card.png",
+    "border": "Legendary-non-max-border.png",
+    "photo": "Messi-L-83.webp",
+    "rating_circle": "Max-90-1000.png",
+    "flag": "ar.png",
+    "star": "Legendary-max.png"
+  },
+  {
     "id": "2",
     "name": "Lionel Messi",
     "searchName": "lionel messi messi2 c84",
