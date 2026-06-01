@@ -1,17 +1,34 @@
 [
+  [
   {
-    "id": "1",
-    "name": "Lionel Messi",
-    "searchName": "lionel messi messi1 183",
+    "id": 1,
+    "name": "Messi",
+    "searchName": "Lionel Messi",
     "rating": 83,
-    "Position-box": "ss.png",
-    "card-bg": "Legendary-non-max-card.png",
-    "border": "Legendary-non-max-border.png",
-    "photo": "Messi-L-83.webp",
-    "rating_circle": "Nonmax-80-89.png",
-    "flag": "ar.png",
-    "star": "Legendary-nonmax.png"
-  },
+    "Position-box": "cf.png",
+    "card-bg": "non-max-card.png", 
+    "border": "non-max-border.png",
+    "rating_circle": "circle-non-max.png",
+    "photo": "messi.png",
+    "flag": "argentina.png",
+    "star": "3star.png",
+    "year_box": "year-bg-gold.png",
+    "year": "2026",
+    
+    "max-card": "max-card.png",
+    "max-border": "max-border.png",
+    "max-rating-circle": "circle-max.png",
+    "stats": {
+      "SPE": 83,
+      "ACC": 85,
+      "CON": 90,
+      "PAS": 88,
+      "SHT": 86,
+      "TAC": 46
+    }
+  }
+]
+
   {
     "id": "4",
     "name": "Lionel Messi",
