@@ -57,10 +57,10 @@ window.initDLSSearch = function(elements) {
     });
   };
 
-  // একক কার্ড রেন্ডার করার ফাংশন
+  // একক কার্ড রেন্ডার করার ফাংশন (আপনার ফিক্সড ডিজাইন পজিশন অনুযায়ী)
   const renderCard = (player) => {
     const base = elements.imageBaseUrl;
-    const cacheBuster = "?v=" + Date.now(); // ছবি ইনস্ট্যান্ট লোড করার জন্য
+    const cacheBuster = "?v=" + Date.now(); // ইমেজ ইনস্ট্যান্ট লোড করার জন্য
 
     let photoName = player.photo;
     if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; 
@@ -93,17 +93,23 @@ window.initDLSSearch = function(elements) {
       canvas.height = 2000;
       const ctx = canvas.getContext('2d');
 
+      // ১. ব্যাকগ্রাউন্ড ইমেজ ড্র
       ctx.drawImage(bgImg, 0, 0, 2000, 2000);
 
+      // ২. প্লেয়ারের ছবি পজিশন (আপনার অরিজিনাল লজিক)
       let type = player['card-bg'].toLowerCase();
       let pX = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 622 : 406;
       let pY = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 191 : -26;
       let pSize = (type.includes('legendary') || type.includes('rare') || type.includes('common')) ? 980 : 1200;
-      
       ctx.drawImage(photoImg, pX, pY, pSize, pSize);
+
+      // ৩. বর্ডার ইমেজ ড্র
       ctx.drawImage(borderImg, 0, 0, 2000, 2000);
+
+      // ৪. রেটিং সার্কেল ড্র
       ctx.drawImage(circleImg, 430, 260, 450, 450);
 
+      // ৫. রেটিং টেক্সট ড্র (আপনার দেওয়া ফিক্সড পজিশন: ৬৫৫, ৫৬৫)
       ctx.save();
       ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
       ctx.shadowBlur = 10; 
@@ -114,6 +120,7 @@ window.initDLSSearch = function(elements) {
       ctx.fillText(player.rating, 655, 565); 
       ctx.restore();
 
+      // ৬. প্লেয়ারের নাম ড্র (আপনার দেওয়া ফিক্সড পজিশন: ১০০০, ১৩৪৫)
       ctx.save();
       let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
       ctx.shadowColor = (nameColor === "white") ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.3)";
@@ -125,26 +132,31 @@ window.initDLSSearch = function(elements) {
       ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
       ctx.restore();
 
+      // ৭. দেশের ফ্ল্যাগ ড্র (আপনার দেওয়া ফিক্সড পজিশন: ৭২৫, ১৪৪০)
       ctx.drawImage(flagImg, 725, 1440, 253, 168);
+
+      // ৮. পজিশন বক্স ইমেজ ড্র (আপনার দেওয়া ফিক্সড পজিশন: ৯block৫, ১৩২০)
       ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
+      // ৯. রেয়ারিটি বা গোল্ডেন স্টার ড্র (১৬১০)
       const starWidth = 180;   
       const starHeight = 180;  
       const starYOffset = 1610; 
       let sX = (2000 - starWidth) / 2;
       ctx.drawImage(starImg, sX, starYOffset, starWidth, starHeight);
 
+      // ক্যানভাসটি মেইন গ্রিডে পুশ করা
       const container = document.createElement('div');
       container.className = 'canvas-container';
       container.appendChild(canvas);
       resultEl.appendChild(container);
 
     }).catch(err => {
-      console.error(err);
+      console.error("Asset Load Error: ", err);
     });
   };
 
-  // ডাটাবেজ থেকে ফ্রেশ ডাটা লোড করার মেইন লজিক (ইনস্ট্যান্ট আপডেটের জন্য)
+  // ডাটাবেজ থেকে লাইভ ফ্রেশ ডাটা লোড করার লজিক (ইনস্ট্যান্ট আপডেটের জন্য)
   const freshJsonUrl = elements.jsonUrl.split('?')[0] + "?t=" + Date.now();
 
   resultEl.innerHTML = "<p style='color:#fff; text-align:center; font-family:sans-serif;'>ডাটাবেজ লোড হচ্ছে...</p>";
