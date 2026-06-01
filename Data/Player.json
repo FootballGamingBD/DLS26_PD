@@ -17,10 +17,10 @@
     "name": "Lionel Messi",
     "searchName": "lionel messi messi2 c84",
     "rating": 84,
-    "Position-box": "ss.png",
-    "card-bg": "Legendary-max-card.png",
-    "border": "Legendary-max-border.png",
-    "photo": "Messi-c-84.webp",
+    "Position-box": "rw.png",
+    "card-bg": "Champion-max-card.png",
+    "border": "champion-max-border.png",
+    "photo": "Messi-c-88.webp",
     "rating_circle": "NonMax-80-89.png",
     "flag": "ar.png",
     "star": "Legendary-nonmax.png"
@@ -34,7 +34,7 @@
     "card-bg": "Legendary-max-card.png",
     "border": "Legendary-max-border.png",
     "photo": "Messi-c-84.webp",
-    "rating_circle": "Max-90-100.png",
+    "rating_circle": "Max-90-1000.png",
     "flag": "pt.png",
     "star": "Legendary-nonmax.png"
   }
