@@ -1,4 +1,4 @@
-// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (Position-box ইমেজ লোডারসহ)
+// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (Clean Position-box Only)
 window.initDLSSearch = function(elements) {
   const inputEl = document.getElementById(elements.inputId);
   const btnEl = document.getElementById(elements.btnId);
@@ -54,8 +54,7 @@ window.initDLSSearch = function(elements) {
           let photoName = player.photo;
           if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; // হাইফেন ফিক্স
 
-          // JSON ফাইলের পজিশন ইমেজের নাম হ্যান্ডেল করা (ধরা যাক: player.position_box বা custom logic)
-          // আপনার JSON এ যদি ইমেজ নাম না থাকে, তবে পজিশন নাম অনুযায়ী (যেমন: ss.png, cf.png) ইমেজ ধরবে
+          // পজিশন ইমেজ নাম (যেমন: ss.png, cf.png)
           let posImgName = player.position_box ? player.position_box : `${player.position.toLowerCase()}.png`;
 
           const urls = {
@@ -64,7 +63,7 @@ window.initDLSSearch = function(elements) {
             circle: `${base}Rating-circle/${player.rating_circle}`,
             photo: `${base}Player-photos/${photoName}`,
             flag: `${base}Flags/${player.flag}`,
-            posBox: `${base}Position-box/${posImgName}`, // নতুন পজিশন বক্স ফোল্ডার লিঙ্ক
+            posBox: `${base}Position-box/${posImgName}`, 
             star: `${base}Star/${player.star}`
           };
 
@@ -79,7 +78,7 @@ window.initDLSSearch = function(elements) {
             });
           };
 
-          // ফন্ট এবং পজিশন বক্সসহ সব এসেট একসাথে লোড করা
+          // সব এসেট একসাথে লোড করা
           Promise.all([
             document.fonts.load("190px 'DLS Font'"), 
             loadImage(urls.bg),
@@ -87,7 +86,7 @@ window.initDLSSearch = function(elements) {
             loadImage(urls.circle),
             loadImage(urls.photo),
             loadImage(urls.flag),
-            loadImage(urls.posBox), // পজিশন বক্স প্রমিস
+            loadImage(urls.posBox), 
             loadImage(urls.star)
           ]).then(([fontStatus, bgImg, borderImg, circleImg, photoImg, flagImg, posBoxImg, starImg]) => {
             
@@ -111,10 +110,10 @@ window.initDLSSearch = function(elements) {
             // ৩. বর্ডার ইমেজ ড্র
             ctx.drawImage(borderImg, 0, 0, 2000, 2000);
 
-            // ৪. রেটিং সার্কেল ড্র (ফিক্সড ৪৩০, ২৬০)
+            // ৪. রেটিং সার্কেল ড্র
             ctx.drawImage(circleImg, 430, 260, 450, 450);
 
-            // ৫. রেটিং টেক্সট (X: 655, Y: 565)
+            // ۵. রেটিং টেক্সট ড্র
             ctx.save();
             ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
             ctx.shadowBlur = 10; 
@@ -125,7 +124,7 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.rating, 655, 565); 
             ctx.restore();
 
-            // ৬. প্লেয়ারের নাম ড্র (X: 1000, Y: 1345)
+            // ৬. প্লেয়ারের নাম ড্র
             ctx.save();
             let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
             
@@ -138,22 +137,13 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
             ctx.restore();
 
-            // ৭. দেশের ফ্ল্যাগ ড্র (X: 725, Y: 1440, W: 253, H: 168)
+            // ৭. দেশের ফ্ল্যাগ ড্র
             ctx.drawImage(flagImg, 725, 1440, 253, 168);
 
-            // ৮. পজিশন ব্যাজ ফ্রেম ড্র (আপনার স্ট্যান্ডার্ড কোড পজিশন: X: 955, Y: 1320, W: 400, H: 400)
+            // ৮. পজিশন বক্স ইমেজ ড্র (লেখা টেক্সট রিমুভড, শুধু ইমেজ বক্স ড্র হবে)
             ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
-            // ৯. পজিশন ফ্রেমের ভেতরে টেক্সট এলাইনমেন্ট (সেন্টারড লজিক)
-            ctx.save();
-            ctx.fillStyle = "white";
-            ctx.font = "900 110px 'DLS Font'";
-            ctx.textAlign = "center";
-            // ফ্রেমের উইডথ ৪০০ হওয়ায় ৯৫৫ + (৪০০/২) = ১১৫৫ হচ্ছে পারফেক্ট মিডল এক্স-পজিশন
-            ctx.fillText(player.position.toUpperCase(), 1155, 1555); 
-            ctx.restore();
-
-            // ১০. রেয়ারিটি বা গোল্ডেন স্টার ড্র (X: সেন্টারে, Y: ১৬১০)
+            // ৯. রেয়ারিটি বা গোল্ডেন স্টার ড্র
             const starWidth = 180;   
             const starHeight = 180;  
             const starYOffset = 1610; 
@@ -169,7 +159,7 @@ window.initDLSSearch = function(elements) {
 
           }).catch(err => {
             console.error(err);
-            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Position-box বা অন্য কোনো Asset লোড হতে সমস্যা হয়েছে!</p>";
+            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Asset লোড হতে সমস্যা হয়েছে!</p>";
           });
 
         } else {
