@@ -1,4 +1,4 @@
-// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (ক্র্যাশ ফ্রি ও টেক্সট রিমুভড সংস্করণ)
+// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (Position-box ইমেজ লোডারসহ)
 window.initDLSSearch = function(elements) {
   const inputEl = document.getElementById(elements.inputId);
   const btnEl = document.getElementById(elements.btnId);
@@ -54,7 +54,8 @@ window.initDLSSearch = function(elements) {
           let photoName = player.photo;
           if (photoName === "Messi-L83.webp") photoName = "Messi-L-83.webp"; // হাইফেন ফিক্স
 
-          // পজিশন ইমেজ নাম (যেমন: ss.png, cf.png)
+          // JSON ফাইলের পজিশন ইমেজের নাম হ্যান্ডেল করা (ধরা যাক: player.position_box বা custom logic)
+          // আপনার JSON এ যদি ইমেজ নাম না থাকে, তবে পজিশন নাম অনুযায়ী (যেমন: ss.png, cf.png) ইমেজ ধরবে
           let posImgName = player.position_box ? player.position_box : `${player.position.toLowerCase()}.png`;
 
           const urls = {
@@ -63,11 +64,11 @@ window.initDLSSearch = function(elements) {
             circle: `${base}Rating-circle/${player.rating_circle}`,
             photo: `${base}Player-photos/${photoName}`,
             flag: `${base}Flags/${player.flag}`,
-            posBox: `${base}Position-box/${posImgName}`, 
+            posBox: `${base}Position-box/${posImgName}`, // নতুন পজিশন باکس ফোল্ডার লিঙ্ক
             star: `${base}Star/${player.star}`
           };
 
-          // 이미지 লোডার ফাংশন
+          // ইমেজ লোডার ফাংশন
           const loadImage = (src) => {
             return new Promise((resolve, reject) => {
               const img = new Image();
@@ -78,7 +79,7 @@ window.initDLSSearch = function(elements) {
             });
           };
 
-          // সব এসেট একসাথে লোড করা
+          // ফন্ট এবং পজিশন বক্সসহ সব এসেট একসাথে লোড করা
           Promise.all([
             document.fonts.load("190px 'DLS Font'"), 
             loadImage(urls.bg),
@@ -86,7 +87,7 @@ window.initDLSSearch = function(elements) {
             loadImage(urls.circle),
             loadImage(urls.photo),
             loadImage(urls.flag),
-            loadImage(urls.posBox), 
+            loadImage(urls.posBox), // পজিশন বক্স প্রমিস
             loadImage(urls.star)
           ]).then(([fontStatus, bgImg, borderImg, circleImg, photoImg, flagImg, posBoxImg, starImg]) => {
             
@@ -110,10 +111,10 @@ window.initDLSSearch = function(elements) {
             // ৩. বর্ডার ইমেজ ড্র
             ctx.drawImage(borderImg, 0, 0, 2000, 2000);
 
-            // ৪. রেটিং সার্কেল ড্র
+            // ৪. রেটিং সার্কেল ড্র (ফিক্সড ৪৩০, ২৬০)
             ctx.drawImage(circleImg, 430, 260, 450, 450);
 
-            // ৫. রেটিং টেক্সট ড্র
+            // ৫. রেটিং টেক্সট (X: 655, Y: 565)
             ctx.save();
             ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
             ctx.shadowBlur = 10; 
@@ -124,7 +125,7 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.rating, 655, 565); 
             ctx.restore();
 
-            // ৬. প্লেয়ারের নাম ড্র
+            // 六. প্লেয়ারের নাম ড্র (X: 1000, Y: 1345)
             ctx.save();
             let nameColor = (type.includes('kickoff') || type.includes('classic') || type.includes('champion26')) ? "white" : "black";
             
@@ -137,13 +138,15 @@ window.initDLSSearch = function(elements) {
             ctx.fillText(player.name.toUpperCase(), 1000, 1345); 
             ctx.restore();
 
-            // ৭. দেশের ফ্ল্যাগ ড্র
+            // ৭. দেশের ফ্ল্যাগ ড্র (X: 725, Y: 1440, W: 253, H: 168)
             ctx.drawImage(flagImg, 725, 1440, 253, 168);
 
-            // ৮. পজিশন বক্স ইমেজ ড্র (পেছনের ডুপ্লিকেট টেক্সট কোড সম্পূর্ণ রিমুভড)
+            // ৮. পজিশন ব্যাজ ফ্রেম ড্র (X: 955, Y: 1320, W: 400, H: 400)
             ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
-            // ৯. রেয়ারিটি বা গোল্ডেন স্টার ড্র
+            // [৯ নম্বর অতিরিক্ত টেক্সট ড্র করার সেকশনটি এখান থেকে রিমুভ করা হয়েছে]
+
+            // ১০. রেয়ারিটি বা গোল্ডেন স্টার ড্র (X: সেন্টারে, Y: ১৬১০)
             const starWidth = 180;   
             const starHeight = 180;  
             const starYOffset = 1610; 
@@ -159,7 +162,7 @@ window.initDLSSearch = function(elements) {
 
           }).catch(err => {
             console.error(err);
-            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Asset লোড হতে সমস্যা হয়েছে!</p>";
+            resultEl.innerHTML = "<p style='color:#ff4a6b; text-align:center;'>Position-box বা অন্য কোনো Asset লোড হতে সমস্যা হয়েছে!</p>";
           });
 
         } else {
