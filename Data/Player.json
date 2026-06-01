@@ -119,7 +119,7 @@
   "rating": 87,
   "Position-box": "ss.png",
   "card-bg": "World-hero-nonmax-card.png",
-  "border": "world-hero-nonmax-border.png",
+  "border": "World-hero-nonmax-border.png",
   "rating_circle": "Nonmax-80-90.png",
   "game-card-bg": "Special.jpg",
   "photo": "W-ronaldo.jpg",
@@ -134,7 +134,7 @@
   "age": "36",
   "foot": "Left",
   "max-card": "World-hero-max-card.png",
-  "max-border": "World-hero-nonmax-border.png",
+  "max-border": "World-hero-max-border.png",
   "max-rating-circle": "Max-90-1000.png",
   "bio": "লিওনেল মেসি ২০২২ সালে আর্জেন্টিনার হয়ে ফিফা বিশ্বকাপ জয় করেন এবং টুর্নামেন্টের সেরা খেলোয়াড় হিসেবে গোল্ডেন বল লাভ করেন।",
   "stats": {
