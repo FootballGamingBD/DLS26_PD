@@ -17,7 +17,6 @@ style.textContent = `
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    font-family: 'DLS Font', Arial, sans-serif !important;
   }
 
   .card-border-img {
@@ -47,7 +46,7 @@ style.textContent = `
     text-align: center;
     font-size: 28px;
     color: #ffffff;
-    z-index: 4;
+    z-index: 6; /* বর্ডারের উপরে রাখা হলো */
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     font-family: 'DLS Font', Arial, sans-serif !important;
     font-weight: normal !important;
@@ -63,25 +62,18 @@ style.textContent = `
     z-index: 2;
   }
 
-  .card-name-plate {
-    position: absolute;
-    bottom: 110px;
-    left: 5%;
-    width: 90%;
-    height: 42px;
-    background: linear-gradient(180deg, #f3e09d 0%, #bca15a 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 4;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-
+  /* গোল্ডেন বক্স রিমুভ করে নামটিকে সরাসরি কার্ডের পজিশনে আনা হলো */
   .card-player-name {
+    position: absolute;
+    bottom: 118px;
+    left: 0;
+    width: 100%;
+    text-align: center;
     font-size: 20px;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    z-index: 6;
     font-family: 'DLS Font', Arial, sans-serif !important;
     font-weight: normal !important;
   }
@@ -94,7 +86,7 @@ style.textContent = `
     justify-content: center;
     align-items: center;
     gap: 12px;
-    z-index: 4;
+    z-index: 6;
   }
 
   .card-flag-img {
@@ -124,7 +116,7 @@ style.textContent = `
     transform: translateX(-50%);
     width: 24px;
     object-fit: contain;
-    z-index: 4;
+    z-index: 6;
   }
 `;
 document.head.appendChild(style);
@@ -152,7 +144,6 @@ window.initDLSSearch = function(elements) {
         if (player) {
           const base = elements.imageBaseUrl;
 
-          // JSON ফাইলের ভুল নাম অটো-কারেক্ট (হাইফেন ফিক্স)
           let photoName = player.photo;
           if (photoName === "Messi-L83.webp") {
              photoName = "Messi-L-83.webp";
@@ -172,9 +163,10 @@ window.initDLSSearch = function(elements) {
                 <img class="card-rating-circle" src="${ratingCircleUrl}" alt="Circle">
                 <div class="card-rating-text">${player.rating}</div>
                 <img class="card-player-photo" src="${photoUrl}" alt="${player.name}">
-                <div class="card-name-plate">
-                  <div class="card-player-name">${player.name}</div>
-                </div>
+                
+                <!-- গোল্ডেন বক্স ছাড়া সরাসরি নাম -->
+                <div class="card-player-name">${player.name}</div>
+                
                 <div class="card-bottom-row">
                   <img class="card-flag-img" src="${flagUrl}" alt="Flag">
                   <div class="card-position-box">${player.position}</div>
