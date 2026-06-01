@@ -1,4 +1,4 @@
-// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (Clean Position-box Only)
+// ক্যানভাস ভিত্তিক DLS ২০০০×২০০০ কার্ড জেনারেটর ইঞ্জিন (ক্র্যাশ ফ্রি ও টেক্সট রিমুভড সংস্করণ)
 window.initDLSSearch = function(elements) {
   const inputEl = document.getElementById(elements.inputId);
   const btnEl = document.getElementById(elements.btnId);
@@ -67,7 +67,7 @@ window.initDLSSearch = function(elements) {
             star: `${base}Star/${player.star}`
           };
 
-          // ইমেজ লোডার ফাংশন
+          // 이미지 লোডার ফাংশন
           const loadImage = (src) => {
             return new Promise((resolve, reject) => {
               const img = new Image();
@@ -113,7 +113,7 @@ window.initDLSSearch = function(elements) {
             // ৪. রেটিং সার্কেল ড্র
             ctx.drawImage(circleImg, 430, 260, 450, 450);
 
-            // ۵. রেটিং টেক্সট ড্র
+            // ৫. রেটিং টেক্সট ড্র
             ctx.save();
             ctx.shadowColor = "rgba(0, 0, 0, 0.5)"; 
             ctx.shadowBlur = 10; 
@@ -140,7 +140,7 @@ window.initDLSSearch = function(elements) {
             // ৭. দেশের ফ্ল্যাগ ড্র
             ctx.drawImage(flagImg, 725, 1440, 253, 168);
 
-            // ৮. পজিশন বক্স ইমেজ ড্র (লেখা টেক্সট রিমুভড, শুধু ইমেজ বক্স ড্র হবে)
+            // ৮. পজিশন বক্স ইমেজ ড্র (পেছনের ডুপ্লিকেট টেক্সট কোড সম্পূর্ণ রিমুভড)
             ctx.drawImage(posBoxImg, 955, 1320, 400, 400);
 
             // ৯. রেয়ারিটি বা গোল্ডেন স্টার ড্র
