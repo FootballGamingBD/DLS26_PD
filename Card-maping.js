@@ -19,7 +19,6 @@ style.textContent = `
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    background-color: transparent; /* ব্যাকগ্রাউন্ড ইমেজ না আসা পর্যন্ত টেস্ট করার জন্য */
   }
 
   /* বর্ডার ইমেজ */
@@ -161,11 +160,11 @@ window.initDLSSearch = function(elements) {
         if (player) {
           const base = elements.imageBaseUrl;
 
-          // আপনার গিটহাব স্ক্রিনশটের ফোল্ডার নেম অনুযায়ী স্পেস ও বড়/ছোট হাতের অক্ষর হুবহু মেলানো হয়েছে
-          const bgUrl = `${base}Card%20bg/${player['card-bg']}`;
-          const borderUrl = `${base}Card%20border/${player.border}`;
+          // আপনার নতুন হাইফেন ওয়ালা ফোল্ডার নেম অনুযায়ী পাথগুলো সেট করা হয়েছে
+          const bgUrl = `${base}Card-bg/${player['card-bg']}`;
+          const borderUrl = `${base}Card-border/${player.border}`;
           const ratingCircleUrl = `${base}Rating-circle/${player.rating_circle}`;
-          const photoUrl = `${base}Player%20photos/${player.photo}`;
+          const photoUrl = `${base}Player-photos/${player.photo}`;
           const flagUrl = `${base}Flags/${player.flag}`;
           const starUrl = `${base}Star/${player.star}`;
 
@@ -174,10 +173,10 @@ window.initDLSSearch = function(elements) {
               <div class="dls-player-card" style="background-image: url('${bgUrl}');">
                 
                 <!-- কার্ড বর্ডার -->
-                <img class="card-border-img" src="${borderUrl}" alt="Border" onerror="this.style.display='none'">
+                <img class="card-border-img" src="${borderUrl}" alt="Border" onerror="this.style.visibility='hidden'">
                 
                 <!-- রেটিং সার্কেল ও নম্বর -->
-                <img class="card-rating-circle" src="${ratingCircleUrl}" alt="Circle" onerror="this.style.display='none'">
+                <img class="card-rating-circle" src="${ratingCircleUrl}" alt="Circle" onerror="this.style.visibility='hidden'">
                 <div class="card-rating-text">${player.rating}</div>
                 
                 <!-- প্লেয়ার ফটো -->
@@ -190,12 +189,12 @@ window.initDLSSearch = function(elements) {
                 
                 <!-- ফ্ল্যাগ ও পজিশন -->
                 <div class="card-bottom-row">
-                  <img class="card-flag-img" src="${flagUrl}" alt="Flag" onerror="this.style.display='none'">
+                  <img class="card-flag-img" src="${flagUrl}" alt="Flag" onerror="this.style.visibility='hidden'">
                   <div class="card-position-box">${player.position}</div>
                 </div>
                 
                 <!-- রেয়ারিটি স্টার -->
-                <img class="card-star-img" src="${starUrl}" alt="Star" onerror="this.style.display='none'">
+                <img class="card-star-img" src="${starUrl}" alt="Star" onerror="this.style.visibility='hidden'">
                 
               </div>
             </div>
