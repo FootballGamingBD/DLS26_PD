@@ -26,4 +26,30 @@
     "bio": "লিওনেল মেসি ২০১২ সালে এক ক্যালেন্ডার ইয়ারে সর্বোচ্চ ৯১টি গোল করে বিশ্বরেকর্ড গড়েন। এটি তার ক্যারিয়ারের অন্যতম সেরা লিজেন্ডারি পারফরম্যান্স কার্ড।",
     "stats": { "SPE": 88, "ACC": 92, "CON": 95, "PAS": 90, "SHT": 94, "TAC": 42 }
   }
+    " id": 2,
+    "name": "Messi",
+    "searchName": "Lionel Messi",
+    "slug": "ronaldo-2012",
+    "rating": 88,
+    "Position-box": "cf.png",
+    "card-bg": "Champion-non-max-card.png",
+    "border": "Champion-non-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
+    "photo": "Ronaldo-21.webp",
+    "flag": "pt.png",
+    "star": "Legendary-non-max.png",
+    "year_box": "Year-c25.png",
+    "year": "2008",
+    "club": "Real Mardrid.png",
+    "nationality": "Portugal",
+    "height": "191 cm",
+    "weight": "70 kg",
+    "age": "25",
+    "foot": "Both",
+    "max-card": "Champion-max-card.png",
+    "max-border": "Champion-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
+    "bio": "লিওনেল মেসি ২০১২ সালে এক ক্যালেন্ডার ইয়ারে সর্বোচ্চ ৯১টি গোল করে বিশ্বরেকর্ড গড়েন। এটি তার ক্যারিয়ারের অন্যতম সেরা লিজেন্ডারি পারফরম্যান্স কার্ড।",
+    "stats": { "SPE": 88, "ACC": 92, "CON": 95, "PAS": 90, "SHT": 94, "TAC": 42 }
+  }
 ]
