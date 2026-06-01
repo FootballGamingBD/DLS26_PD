@@ -23,8 +23,8 @@ style.textContent = `
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500px;
     z-index: 5;
     pointer-events: none;
   }
