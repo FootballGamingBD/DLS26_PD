@@ -5400,7 +5400,7 @@
     }
   },
       {
-    "id": 150,
+    "id": 151,
     "name": "MAHE ALOM",
     "searchName": "Mahi",
     "slug": "mahi-alom",
@@ -5410,7 +5410,7 @@
     "border": "World-hero-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
-    "photo": "w-ronaldo.webp",
+    "photo": "w-ronaldo.png",
     "flag": "bd.png",
     "star": "Ds25-star.png",
     "max-star": "Ds25-star.png",
