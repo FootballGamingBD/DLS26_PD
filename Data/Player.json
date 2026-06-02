@@ -12,7 +12,7 @@
     "game-card-bg": "L-r-c.png",
     "photo": "Messi-L-83.webp",
     "flag": "ar.png",
-    "star": "Legendary-nonmax.png",
+    "star": "Legendary-nonmax-star.png",
     "year_box": "Year-c25.png",
     "year": "2012",
     "club": "barcelona.png",
@@ -24,6 +24,7 @@
     "max-card": "Legendary-max-card.png",
     "max-border": "Legendary-max-border.png",
     "max-rating-circle": "Max-90-1000.png",
+    "max-star": "Legendary-max-star.png",
     "bio": "লিওনেল মেসি ২০১২ সালে এক ক্যালেন্ডার ইয়ারে সর্বোচ্চ ৯১টি গোল করে বিশ্বরেকর্ড গড়েন। এটি তার ক্যারিয়ারের অন্যতম সেরা লিজেন্ডারি পারফরম্যান্স কার্ড।",
     "stats": { "SPE": 88, "ACC": 92, "STA": 84, "STR": 68, "CON": 95, "PAS": 90, "SHT": 94, "TAC": 42 }
   },
