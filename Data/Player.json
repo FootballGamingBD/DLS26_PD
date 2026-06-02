@@ -147,6 +147,42 @@
     "SHT": 91,
     "TAC": 45
   }
-}
-
+},
+  [
+  {
+    "id": 8,
+    "name": "Olise",
+    "searchName": "Michael Olise",
+    "slug": "olise",
+    "rating": 86,
+    "Position-box": "Rw.png",
+    "card-bg": "Legendary-nonmax-card.png",
+    "border": "Legendary-nonmax-border.png",
+    "rating_circle": "Nonmax-80-89.png",
+    "game-card-bg": "L-r-c.png",
+    "photo": "Ronaldo-21.png",
+    "flag": "fr.png",
+    "star": "Legendary-star.png",
+    "club": "আমি পরে আপডেট করব",
+    "nationality": "France",
+    "height": "184 cm",
+    "weight": "70kg",
+    "age": "25",
+    "foot": "Left",
+    "max-card": "Legendary-max-card.png",
+    "max-border": "Legendary-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
+    "bio": "Michael Olise is a highly talented French winger known for his exceptional dribbling and creative vision. He played a pivotal role for France at the Paris 2024 Olympics, scoring crucial goals and providing key assists to lead his country to a prestigious Silver Medal.",
+    "stats": {
+      "SPE": 85,
+      "ACC": 87,
+      "STA": 82,
+      "STR": 65,
+      "CON": 92,
+      "PAS": 91,
+      "SHT": 89,
+      "TAC": 54
+    }
+  }
 ]
+
