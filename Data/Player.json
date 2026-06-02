@@ -5398,6 +5398,42 @@
       "SHT": 69,
       "TAC": 83
     }
+  },
+      {
+    "id": 150,
+    "name": "MAHE ALOM",
+    "searchName": "Mahi",
+    "slug": "mahi-alom",
+    "rating": 89,
+    "Position-box": "St.png",
+    "card-bg": "World-hero-nonmax-card.png",
+    "border": "World-hero-nonmax-border.png",
+    "rating_circle": "Nonmax-80-89.png",
+    "game-card-bg": "Special.jpg",
+    "photo": "w-ronaldo.webp",
+    "flag": "bd.png",
+    "star": "Ds25-star.png",
+    "max-star": "Ds25-star.png",
+    "club": "আমি পরে আপডেট করব",
+    "nationality": "Germany",
+    "height": "189 cm",
+    "weight": "70kg",
+    "age": "25",
+    "foot": "Right",
+    "max-card": "World-hero-max-card.png",
+    "max-border": "World-hero-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
+    "bio": "Sami Khedira is a robust and tactically astute defensive midfielder, revered for his commanding physical presence, flawless structural positioning, and intense work rate in breaking up dangerous transitional plays.",
+    "stats": {
+      "SPE": 64,
+      "ACC": 64,
+      "STA": 86,
+      "STR": 87,
+      "CON": 79,
+      "PAS": 77,
+      "SHT": 69,
+      "TAC": 83
+    }
   }
 ]
 
