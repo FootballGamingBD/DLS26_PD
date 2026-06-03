@@ -6299,10 +6299,10 @@
       "TAC": 35
     }
   },
-  {
+      {
     "id": 176,
-    "name": "MARIO BALOTELLI",
-    "searchName": "Balotelli",
+    "name": "BALOTELLI",
+    "searchName": "MARIO BALOTELLI",
     "slug": "mario-balotelli",
     "rating": 82,
     "Position-box": "Cf.png",
@@ -6337,8 +6337,8 @@
   },
   {
     "id": 177,
-    "name": "JAMIE VARDY",
-    "searchName": "Vardy",
+    "name": "VARDY",
+    "searchName": "JAMIE VARDY",
     "slug": "jamie-vardy",
     "rating": 83,
     "Position-box": "Cf.png",
@@ -6373,8 +6373,8 @@
   },
   {
     "id": 178,
-    "name": "ARTURO VIDAL",
-    "searchName": "Vidal",
+    "name": "VIDAL",
+    "searchName": "ARTURO VIDAL",
     "slug": "arturo-vidal",
     "rating": 84,
     "Position-box": "Cm.png",
@@ -6409,8 +6409,8 @@
   },
   {
     "id": 179,
-    "name": "N'GOLO KANTÉ",
-    "searchName": "Kanté",
+    "name": "KANTÉ",
+    "searchName": "N'GOLO KANTÉ",
     "slug": "ngolo-kante",
     "rating": 85,
     "Position-box": "Dm.png",
@@ -6445,8 +6445,8 @@
   },
   {
     "id": 180,
-    "name": "ÁNGEL DI MARÍA (AM)",
-    "searchName": "Di María",
+    "name": "DI MARÍA",
+    "searchName": "ÁNGEL DI MARÍA",
     "slug": "angel-di-maria-am",
     "rating": 85,
     "Position-box": "Am.png",
@@ -6481,8 +6481,8 @@
   },
   {
     "id": 181,
-    "name": "ÁNGEL DI MARÍA (RW)",
-    "searchName": "Di María",
+    "name": "DI MARÍA",
+    "searchName": "ÁNGEL DI MARÍA",
     "slug": "angel-di-maria-rw",
     "rating": 83,
     "Position-box": "Rw.png",
@@ -6517,8 +6517,8 @@
   },
   {
     "id": 182,
-    "name": "ALEXIS SÁNCHEZ",
-    "searchName": "Alexis",
+    "name": "ALEXIS",
+    "searchName": "ALEXIS SÁNCHEZ",
     "slug": "alexis-sanchez",
     "rating": 84,
     "Position-box": "Cf.png",
@@ -6553,8 +6553,8 @@
   },
   {
     "id": 183,
-    "name": "CRISTIANO RONALDO (RM)",
-    "searchName": "Ronaldo",
+    "name": "RONALDO",
+    "searchName": "CRISTIANO RONALDO",
     "slug": "cristiano-ronaldo-rm",
     "rating": 82,
     "Position-box": "Rm.png",
@@ -6589,8 +6589,8 @@
   },
   {
     "id": 184,
-    "name": "LIONEL MESSI (RW)",
-    "searchName": "Messi",
+    "name": "MESSI",
+    "searchName": "LIONEL MESSI",
     "slug": "lionel-messi-rw",
     "rating": 84,
     "Position-box": "Rw.png",
@@ -6625,8 +6625,8 @@
   },
   {
     "id": 185,
-    "name": "LIONEL MESSI (CF)",
-    "searchName": "Messi",
+    "name": "MESSI",
+    "searchName": "LIONEL MESSI",
     "slug": "lionel-messi-cf",
     "rating": 88,
     "Position-box": "Cf.png",
@@ -6661,8 +6661,8 @@
   },
   {
     "id": 186,
-    "name": "CRISTIANO RONALDO (LW)",
-    "searchName": "Ronaldo",
+    "name": "RONALDO",
+    "searchName": "CRISTIANO RONALDO",
     "slug": "cristiano-ronaldo-lw",
     "rating": 88,
     "Position-box": "Lw.png",
@@ -6697,8 +6697,8 @@
   },
   {
     "id": 187,
-    "name": "LUKA MODRIĆ",
-    "searchName": "Modrić",
+    "name": "MODRIĆ",
+    "searchName": "LUKA MODRIĆ",
     "slug": "luka-modric",
     "rating": 86,
     "Position-box": "Cm.png",
