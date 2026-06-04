@@ -8869,7 +8869,7 @@
   {
     "id": 219,
     "name": "J. ALVAREZ",
-    "searchName": "JULIÁN ALVAREZ",
+    "searchName": "Arvarez",
     "slug": "julian-alvarez",
     "rating": 84,
     "Position-box": "Cf.png",
@@ -8878,7 +8878,7 @@
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Alvarez-kick26.png",
-    "flag": "ar.png",
+    "flag": "ar.png"   
     "star": "Kick26-star.png",
     "club": "আমি পরে আপডেট করব",
     "nationality": "Argentina",
@@ -8905,7 +8905,7 @@
     "id": 220,
     "name": "RAPHINHA",
     "searchName": "RAPHAEL BELLOLI",
-    "slug": "raphael-belloli",
+    "slug": "Raphinha",
     "rating": 85,
     "Position-box": "Lw.png",
     "card-bg": "Kick26-nonmax-card.png",
