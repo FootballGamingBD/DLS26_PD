@@ -1,8 +1,8 @@
 [
   {
-    "id": 219,
-    "popup_id": "popup-lamine-yamal-219",
-    "name": "YAMAL",
+    "id": "001",
+    "popup_id": "popup-lamine-yamal-001",
+    "name": "LAMINE YAMAL",
     "searchName": "LAMINE YAMAL",
     "slug": "lamine-yamal-legendary",
     "card_type": "legendary",
@@ -12,7 +12,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Yamal-L.png",
+    "photo": "Lamine Yamal-L.webp",
     "flag": "es.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -38,8 +38,8 @@
     }
   },
   {
-    "id": 220,
-    "popup_id": "popup-gabriel-220",
+    "id": "002",
+    "popup_id": "popup-gabriel-002",
     "name": "GABRIEL",
     "searchName": "GABRIEL MAGALHAES",
     "slug": "gabriel-magalhaes-legendary",
@@ -50,7 +50,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Gabriel-L.png",
+    "photo": "Gabriel-L.webp",
     "flag": "br.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -76,8 +76,8 @@
     }
   },
   {
-    "id": 221,
-    "popup_id": "popup-rice-221",
+    "id": "003",
+    "popup_id": "popup-rice-003",
     "name": "RICE",
     "searchName": "DECLAN RICE",
     "slug": "declan-rice-legendary",
@@ -88,7 +88,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Rice-L.png",
+    "photo": "Rice-L.webp",
     "flag": "england.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -114,8 +114,8 @@
     }
   },
   {
-    "id": 222,
-    "popup_id": "popup-vini-jr-222",
+    "id": "004",
+    "popup_id": "popup-vini-jr-004",
     "name": "VINI JR.",
     "searchName": "VINICIUS JUNIOR",
     "slug": "vinicius-junior-legendary",
@@ -126,7 +126,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Vini Jr.-L.png",
+    "photo": "Vini Jr.-L.webp",
     "flag": "br.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -152,8 +152,8 @@
     }
   },
   {
-    "id": 223,
-    "popup_id": "popup-hakimi-223",
+    "id": "005",
+    "popup_id": "popup-hakimi-005",
     "name": "HAKIMI",
     "searchName": "ACHRAF HAKIMI",
     "slug": "achraf-hakimi-legendary",
@@ -164,7 +164,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Hakimi-L.png",
+    "photo": "Hakimi-L.webp",
     "flag": "ma.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -190,8 +190,8 @@
     }
   },
   {
-    "id": 224,
-    "popup_id": "popup-haaland-224",
+    "id": "006",
+    "popup_id": "popup-haaland-006",
     "name": "HAALAND",
     "searchName": "ERLING HAALAND",
     "slug": "erling-haaland-legendary",
@@ -202,7 +202,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Haaland-L.png",
+    "photo": "Haaland-L.webp",
     "flag": "no.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -228,8 +228,8 @@
     }
   },
   {
-    "id": 225,
-    "popup_id": "popup-olise-225",
+    "id": "007",
+    "popup_id": "popup-olise-007",
     "name": "OLISE",
     "searchName": "MICHAEL OLISE",
     "slug": "michael-olise-legendary",
@@ -240,7 +240,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Olise-L.png",
+    "photo": "Olise-L.webp",
     "flag": "fr.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -266,8 +266,8 @@
     }
   },
   {
-    "id": 226,
-    "popup_id": "popup-kane-226",
+    "id": "008",
+    "popup_id": "popup-kane-008",
     "name": "KANE",
     "searchName": "HARRY KANE",
     "slug": "harry-kane-legendary",
@@ -278,7 +278,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Kane-L.png",
+    "photo": "Kane-L.webp",
     "flag": "england.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -304,8 +304,8 @@
     }
   },
   {
-    "id": 227,
-    "popup_id": "popup-o-dembele-227",
+    "id": "009",
+    "popup_id": "popup-o-dembele-009",
     "name": "O. DEMBELE",
     "searchName": "OUSMANE DEMBELE",
     "slug": "ousmane-dembele-legendary",
@@ -316,7 +316,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "O. Dembele-L.png",
+    "photo": "O. Dembele-L.webp",
     "flag": "fr.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -342,8 +342,8 @@
     }
   },
   {
-    "id": 228,
-    "popup_id": "popup-szoboszlai-228",
+    "id": "010",
+    "popup_id": "popup-szoboszlai-010",
     "name": "SZOBOSZLAI",
     "searchName": "DOMINIK SZOBOSZLAI",
     "slug": "dominik-szoboszlai-legendary",
@@ -354,7 +354,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Szoboszlai-L.png",
+    "photo": "Szoboszlai-L.webp",
     "flag": "hu.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -380,8 +380,8 @@
     }
   },
   {
-    "id": 229,
-    "popup_id": "popup-valverde-229",
+    "id": "011",
+    "popup_id": "popup-valverde-011",
     "name": "VALVERDE",
     "searchName": "FEDERICO VALVERDE",
     "slug": "federico-valverde-legendary",
@@ -392,7 +392,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Valverde-L.png",
+    "photo": "Valverde-L.webp",
     "flag": "uy.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -418,8 +418,8 @@
     }
   },
   {
-    "id": 230,
-    "popup_id": "popup-b-fernandes-230",
+    "id": "012",
+    "popup_id": "popup-b-fernandes-012",
     "name": "B. FERNANDES",
     "searchName": "BRUNO FERNANDES",
     "slug": "bruno-fernandes-legendary",
@@ -430,7 +430,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "B. Fernandes-L.png",
+    "photo": "B. Fernandes-L.webp",
     "flag": "pt.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -456,8 +456,8 @@
     }
   },
   {
-    "id": 231,
-    "popup_id": "popup-pedri-231",
+    "id": "013",
+    "popup_id": "popup-pedri-013",
     "name": "PEDRI",
     "searchName": "PEDRO GONZALEZ LOPEZ",
     "slug": "pedro-gonzalez-lopez-legendary",
@@ -468,7 +468,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Pedri-L.png",
+    "photo": "Pedri-L.webp",
     "flag": "es.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -494,8 +494,8 @@
     }
   },
   {
-    "id": 232,
-    "popup_id": "popup-bellingham-232",
+    "id": "014",
+    "popup_id": "popup-bellingham-014",
     "name": "BELLINGHAM",
     "searchName": "JUDE BELLINGHAM",
     "slug": "jude-bellingham-legendary",
@@ -506,7 +506,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Bellingham-L.png",
+    "photo": "Bellingham-L.webp",
     "flag": "england.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -532,8 +532,8 @@
     }
   },
   {
-    "id": 233,
-    "popup_id": "popup-dimarco-233",
+    "id": "015",
+    "popup_id": "popup-dimarco-015",
     "name": "DIMARCO",
     "searchName": "FEDERICO DIMARCO",
     "slug": "federico-dimarco-legendary",
@@ -544,7 +544,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Dimarco-L.png",
+    "photo": "Dimarco-L.webp",
     "flag": "it.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -570,8 +570,8 @@
     }
   },
   {
-    "id": 234,
-    "popup_id": "popup-vitinha-234",
+    "id": "016",
+    "popup_id": "popup-vitinha-016",
     "name": "VITINHA",
     "searchName": "VITINHA",
     "slug": "vitinha-legendary",
@@ -582,7 +582,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Vitinha-L.png",
+    "photo": "Vitinha-L.webp",
     "flag": "pt.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -608,8 +608,8 @@
     }
   },
   {
-    "id": 235,
-    "popup_id": "popup-raphinha-235",
+    "id": "017",
+    "popup_id": "popup-raphinha-017",
     "name": "RAPHINHA",
     "searchName": "RAPHAEL BELLOLI",
     "slug": "raphael-belloli-legendary",
@@ -620,7 +620,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Raphinha-L.png",
+    "photo": "Raphinha-L.webp",
     "flag": "br.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -646,8 +646,8 @@
     }
   },
   {
-    "id": 236,
-    "popup_id": "popup-kvaratskhelia-236",
+    "id": "018",
+    "popup_id": "popup-kvaratskhelia-018",
     "name": "KVARATSKHELIA",
     "searchName": "KHVICHA KVARATSKHELIA",
     "slug": "khvicha-kvaratskhelia-legendary",
@@ -658,7 +658,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Kvaratskhelia-L.png",
+    "photo": "Kvaratskhelia-L.webp",
     "flag": "ge.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -684,8 +684,8 @@
     }
   },
   {
-    "id": 237,
-    "popup_id": "popup-lautaro-237",
+    "id": "019",
+    "popup_id": "popup-lautaro-019",
     "name": "LAUTARO",
     "searchName": "LAUTARO MARTINEZ",
     "slug": "lautaro-martinez-legendary",
@@ -696,7 +696,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Lautaro-L.png",
+    "photo": "Lautaro-L.webp",
     "flag": "ar.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -722,8 +722,8 @@
     }
   },
   {
-    "id": 238,
-    "popup_id": "popup-virgil-238",
+    "id": "020",
+    "popup_id": "popup-virgil-020",
     "name": "VIRGIL",
     "searchName": "VIRGIL VAN DIJK",
     "slug": "virgil-van-dijk-legendary",
@@ -734,7 +734,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Virgil-L.png",
+    "photo": "Virgil-L.webp",
     "flag": "nl.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -760,8 +760,8 @@
     }
   },
   {
-    "id": 239,
-    "popup_id": "popup-j-alvarez-239",
+    "id": "021",
+    "popup_id": "popup-j-alvarez-021",
     "name": "J. ALVAREZ",
     "searchName": "JULIAN ALVAREZ",
     "slug": "julian-alvarez-legendary",
@@ -772,7 +772,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "J. Alvarez-L.png",
+    "photo": "J. Alvarez-L.webp",
     "flag": "ar.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -798,8 +798,8 @@
     }
   },
   {
-    "id": 240,
-    "popup_id": "popup-calhanohu-lu-240",
+    "id": "022",
+    "popup_id": "popup-calhanohu-lu-022",
     "name": "CALHANOHU LU",
     "searchName": "HAKAN CALHANO LU",
     "slug": "hakan-calhano-lu-legendary",
@@ -810,7 +810,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Calhanohu Lu-L.png",
+    "photo": "Calhanohu Lu-L.webp",
     "flag": "tr.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -836,8 +836,8 @@
     }
   },
   {
-    "id": 241,
-    "popup_id": "popup-bastoni-241",
+    "id": "023",
+    "popup_id": "popup-bastoni-023",
     "name": "BASTONI",
     "searchName": "ALESSANDRO BASTONI",
     "slug": "alessandro-bastoni-legendary",
@@ -848,7 +848,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Bastoni-L.png",
+    "photo": "Bastoni-L.webp",
     "flag": "it.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -874,8 +874,8 @@
     }
   },
   {
-    "id": 242,
-    "popup_id": "popup-n-mendes-242",
+    "id": "024",
+    "popup_id": "popup-n-mendes-024",
     "name": "N. MENDES",
     "searchName": "NUNO MENDES",
     "slug": "nuno-mendes-legendary",
@@ -886,7 +886,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "N. Mendes-L.png",
+    "photo": "N. Mendes-L.webp",
     "flag": "pt.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
@@ -912,8 +912,8 @@
     }
   },
   {
-    "id": 243,
-    "popup_id": "popup-rodrigo-243",
+    "id": "025",
+    "popup_id": "popup-rodrigo-025",
     "name": "RODRIGO",
     "searchName": "RODRI",
     "slug": "rodri-legendary",
@@ -924,7 +924,7 @@
     "border": "Legendary-nonmax-border.png",
     "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "L-r-c.png",
-    "photo": "Rodrigo-L.png",
+    "photo": "Rodrigo-L.webp",
     "flag": "es.png",
     "star": "Legendary-nonmax-star.png",
     "max-star": "Legendary-max-star.png",
