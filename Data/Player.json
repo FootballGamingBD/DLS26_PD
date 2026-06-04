@@ -6212,7 +6212,7 @@
     "bio": "In 2012, Lionel Messi produced an unprecedented level of individual brilliance at Barcelona, breaking countless scoring records with his extraordinary agility and finishing.",
     "stats": { "SPE": 90, "ACC": 93, "STA": 81, "STR": 64, "CON": 97, "PAS": 90, "SHT": 97, "TAC": 41 }
   },
-  {
+    {
     "id": 4000,
     "popup_id": "popup-dembélé-87-Team-of-2026",
     "name": "O. DEMBÉLÉ",
@@ -6224,9 +6224,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Rw.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Dembele-T26.png",
     "flag": "fr.png",
@@ -6238,8 +6237,11 @@
     "weight": "67kg",
     "age": "28",
     "foot": "Both",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, Ousmane Dembélé showcased his electric pace and creative brilliance, consistently breaking down defenses with his incredible dribbling skills and playmaking ability.",
-    "stats": { "SPE": 91, "ACC": 94, "STA": 82, "STR": 64, "CON": 93, "PAS": 92, "SHO": 92, "TAC": 46 }
+    "stats": { "SPE": 91, "ACC": 94, "STA": 82, "STR": 64, "CON": 93, "PAS": 92, "SHT": 92, "TAC": 46 }
   },
   {
     "id": 4001,
@@ -6253,9 +6255,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Cf.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Mbappe-T26.png",
     "flag": "fr.png",
@@ -6267,8 +6268,11 @@
     "weight": "73kg",
     "age": "26",
     "foot": "Right",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Throughout 2025, Kylian Mbappé continued to define elite goalscoring, utilizing his unmatched acceleration and clinical finishing to dominate world-class opposition.",
-    "stats": { "SPE": 95, "ACC": 95, "STA": 85, "STR": 75, "CON": 91, "PAS": 81, "SHO": 95, "TAC": 32 }
+    "stats": { "SPE": 95, "ACC": 95, "STA": 85, "STR": 75, "CON": 91, "PAS": 81, "SHT": 95, "TAC": 32 }
   },
   {
     "id": 4002,
@@ -6282,9 +6286,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Cf.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Kane-T26.png",
     "flag": "gb-eng.png",
@@ -6296,8 +6299,11 @@
     "weight": "89kg",
     "age": "32",
     "foot": "Right",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, Harry Kane cemented his status as a legendary forward, displaying elite-level vision, lethal shooting accuracy, and a relentless physical presence in the final third.",
-    "stats": { "SPE": 78, "ACC": 75, "STA": 87, "STR": 92, "CON": 90, "PAS": 90, "SHO": 96, "TAC": 53 }
+    "stats": { "SPE": 78, "ACC": 75, "STA": 87, "STR": 92, "CON": 90, "PAS": 90, "SHT": 96, "TAC": 53 }
   },
   {
     "id": 4003,
@@ -6311,9 +6317,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Rb.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Hakimi-T26.png",
     "flag": "ma.png",
@@ -6325,8 +6330,11 @@
     "weight": "73kg",
     "age": "27",
     "foot": "Right",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "During 2025, Achraf Hakimi revolutionized the right-back position with his extreme pace and attacking output, providing a consistent threat while maintaining defensive reliability.",
-    "stats": { "SPE": 93, "ACC": 88, "STA": 90, "STR": 70, "CON": 82, "PAS": 87, "SHO": 75, "TAC": 81 }
+    "stats": { "SPE": 93, "ACC": 88, "STA": 90, "STR": 70, "CON": 82, "PAS": 87, "SHT": 75, "TAC": 81 }
   },
   {
     "id": 4004,
@@ -6340,9 +6348,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Cm.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Pedri-T26.png",
     "flag": "es.png",
@@ -6354,8 +6361,11 @@
     "weight": "61kg",
     "age": "23",
     "foot": "Right",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, Pedri demonstrated midfield mastery, utilizing exceptional control and precise passing to dictate the tempo of games against the world's toughest teams.",
-    "stats": { "SPE": 75, "ACC": 86, "STA": 87, "STR": 71, "CON": 93, "PAS": 93, "SHO": 77, "TAC": 79 }
+    "stats": { "SPE": 75, "ACC": 86, "STA": 87, "STR": 71, "CON": 93, "PAS": 93, "SHT": 77, "TAC": 79 }
   },
   {
     "id": 4005,
@@ -6369,9 +6379,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Rw.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Yamal-T26.png",
     "flag": "es.png",
@@ -6383,8 +6392,11 @@
     "weight": "68kg",
     "age": "18",
     "foot": "Left",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, young sensation Lamine Yamal made a significant impact on the wing, combining extraordinary ball control and advanced passing vision far beyond his age.",
-    "stats": { "SPE": 87, "ACC": 93, "STA": 84, "STR": 66, "CON": 96, "PAS": 91, "SHO": 86, "TAC": 40 }
+    "stats": { "SPE": 87, "ACC": 93, "STA": 84, "STR": 66, "CON": 96, "PAS": 91, "SHT": 86, "TAC": 40 }
   },
   {
     "id": 4006,
@@ -6398,9 +6410,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Rw.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Salah-T26.png",
     "flag": "eg.png",
@@ -6412,8 +6423,11 @@
     "weight": "71kg",
     "age": "33",
     "foot": "Left",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Throughout 2025, Mohamed Salah remained a premier attacking force, using his trademark speed, lethal finishing, and creative flair to dismantle defenses consistently.",
-    "stats": { "SPE": 87, "ACC": 90, "STA": 86, "STR": 73, "CON": 93, "PAS": 91, "SHO": 93, "TAC": 39 }
+    "stats": { "SPE": 87, "ACC": 90, "STA": 86, "STR": 73, "CON": 93, "PAS": 91, "SHT": 93, "TAC": 39 }
   },
   {
     "id": 4007,
@@ -6427,9 +6441,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Cb.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Gabriel-T26.png",
     "flag": "br.png",
@@ -6441,8 +6454,11 @@
     "weight": "78kg",
     "age": "27",
     "foot": "Left",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, Gabriel Magalhães stood as an impenetrable wall in defense, utilizing his immense strength and perfectly timed tackles to neutralize top attacking threats.",
-    "stats": { "SPE": 82, "ACC": 72, "STA": 83, "STR": 95, "CON": 78, "PAS": 81, "SHO": 62, "TAC": 94 }
+    "stats": { "SPE": 82, "ACC": 72, "STA": 83, "STR": 95, "CON": 78, "PAS": 81, "SHT": 62, "TAC": 94 }
   },
   {
     "id": 4008,
@@ -6456,9 +6472,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Lb.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Mendes-T26.png",
     "flag": "pt.png",
@@ -6470,8 +6485,11 @@
     "weight": "70kg",
     "age": "23",
     "foot": "Left",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "In 2025, Nuno Mendes established himself as an elite modern fullback, blending incredible recovery speed with disciplined defensive work and effective forward runs.",
-    "stats": { "SPE": 94, "ACC": 92, "STA": 85, "STR": 70, "CON": 82, "PAS": 81, "SHO": 63, "TAC": 84 }
+    "stats": { "SPE": 94, "ACC": 92, "STA": 85, "STR": 70, "CON": 82, "PAS": 81, "SHT": 63, "TAC": 84 }
   },
   {
     "id": 4009,
@@ -6485,9 +6503,8 @@
     "year-box": "T26-year.png",
     "Position-box": "Cm.png",
     "card-bg": "T26-nonmax-card.png",
-    "max-card-bg": "T26-max-card.png",
     "border": "T26-nonmax-border.png",
-    "max-border": "T26-max-border.png",
+    "rating_circle": "Nonmax-80-89.png",
     "game-card-bg": "Special.jpg",
     "photo": "Vitinha-T26.png",
     "flag": "pt.png",
@@ -6499,8 +6516,11 @@
     "weight": "60kg",
     "age": "25",
     "foot": "Right",
+    "max-card": "T26-max-card.png",
+    "max-border": "T26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Throughout 2025, Vitinha proved to be the heartbeat of the midfield, orchestrating play with his technical precision, high work rate, and composed passing game.",
-    "stats": { "SPE": 79, "ACC": 87, "STA": 87, "STR": 59, "CON": 92, "PAS": 92, "SHO": 79, "TAC": 81 }
+    "stats": { "SPE": 79, "ACC": 87, "STA": 87, "STR": 59, "CON": 92, "PAS": 92, "SHT": 79, "TAC": 81 }
   }
 
 ]
