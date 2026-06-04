@@ -7198,6 +7198,9 @@
     "weight": "68kg",
     "age": "26",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Gaizka Mendieta was a key midfielder for Valencia in 2000, known for his energy and goal-scoring.",
     "stats": { "SPE": 80, "ACC": 83, "STA": 90, "STR": 67, "CON": 82, "PAS": 82, "SHT": 80, "TAC": 70 }
   },
@@ -7226,6 +7229,9 @@
     "weight": "74kg",
     "age": "32",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Carlos Valderrama was a legendary playmaker in 1993, famous for his vision and passing.",
     "stats": { "SPE": 70, "ACC": 83, "STA": 82, "STR": 76, "CON": 86, "PAS": 85, "SHT": 76, "TAC": 67 }
   },
@@ -7254,6 +7260,9 @@
     "weight": "78kg",
     "age": "35",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Dennis Bergkamp was a master of technique and vision for Arsenal in 2004.",
     "stats": { "SPE": 75, "ACC": 74, "STA": 80, "STR": 81, "CON": 90, "PAS": 82, "SHT": 81, "TAC": 49 }
   },
@@ -7282,6 +7291,9 @@
     "weight": "75kg",
     "age": "29",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Paul Gascoigne was a creative midfielder for Rangers in 1996.",
     "stats": { "SPE": 75, "ACC": 80, "STA": 69, "STR": 80, "CON": 89, "PAS": 82, "SHT": 82, "TAC": 50 }
   },
@@ -7310,6 +7322,9 @@
     "weight": "78kg",
     "age": "23",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Hernán Crespo was a clinical striker for Parma in 1998, known for his finishing.",
     "stats": { "SPE": 85, "ACC": 83, "STA": 82, "STR": 86, "CON": 84, "PAS": 73, "SHT": 87, "TAC": 44 }
   },
@@ -7338,6 +7353,9 @@
     "weight": "84kg",
     "age": "30",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Walter Zenga was a legendary Italian goalkeeper for Inter in 1990.",
     "stats": { "SPE": 70, "ACC": 67, "GKR": 79, "STR": 66, "CON": 60, "PAS": 61, "GKH": 82, "TAC": 56 }
   },
@@ -7366,6 +7384,9 @@
     "weight": "79kg",
     "age": "30",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Davor Šuker was a prolific forward for Real Madrid in 1998.",
     "stats": { "SPE": 82, "ACC": 82, "STA": 83, "STR": 78, "CON": 85, "PAS": 76, "SHT": 89, "TAC": 44 }
   },
@@ -7394,6 +7415,9 @@
     "weight": "85kg",
     "age": "26",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Marcel Desailly was a rock-solid defender/midfielder for AC Milan in 1994.",
     "stats": { "SPE": 80, "ACC": 75, "STA": 89, "STR": 92, "CON": 80, "PAS": 80, "SHT": 52, "TAC": 90 }
   },
@@ -7422,6 +7446,9 @@
     "weight": "85kg",
     "age": "32",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Tony Adams was a legendary defensive leader for Arsenal in 1998, renowned for his strength and tactical awareness.",
     "stats": { "SPE": 77, "ACC": 72, "STA": 85, "STR": 93, "CON": 74, "PAS": 77, "SHT": 58, "TAC": 92 }
   },
@@ -7450,6 +7477,9 @@
     "weight": "73kg",
     "age": "28",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Andy Cole was a prolific striker for Manchester United in 1999, known for his incredible goal-scoring instincts.",
     "stats": { "SPE": 85, "ACC": 85, "STA": 83, "STR": 80, "CON": 83, "PAS": 76, "SHT": 89, "TAC": 40 }
   },
@@ -7478,6 +7508,9 @@
     "weight": "79kg",
     "age": "29",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Emmanuel Petit was a dynamic midfielder for Arsenal in 1999, recognized for his physical presence and passing.",
     "stats": { "SPE": 79, "ACC": 77, "STA": 90, "STR": 84, "CON": 81, "PAS": 82, "SHT": 72, "TAC": 85 }
   },
@@ -7506,6 +7539,9 @@
     "weight": "73kg",
     "age": "23",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Andy Cole displayed immense promise at Newcastle United in 1994, showcasing lethal finishing abilities.",
     "stats": { "SPE": 88, "ACC": 88, "STA": 85, "STR": 80, "CON": 83, "PAS": 79, "SHT": 92, "TAC": 30 }
   },
@@ -7534,6 +7570,9 @@
     "weight": "78kg",
     "age": "26",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Hernán Crespo continued his goal-scoring form at Lazio in 2001, proving to be one of the world's best strikers.",
     "stats": { "SPE": 85, "ACC": 84, "STA": 84, "STR": 86, "CON": 84, "PAS": 75, "SHT": 93, "TAC": 37 }
   },
@@ -7562,6 +7601,9 @@
     "weight": "74kg",
     "age": "29",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Robert Pires was a creative force for Arsenal in 2002, known for his technical skill and goal contributions.",
     "stats": { "SPE": 84, "ACC": 86, "STA": 83, "STR": 77, "CON": 89, "PAS": 87, "SHT": 80, "TAC": 50 }
   },
@@ -7590,6 +7632,9 @@
     "weight": "85kg",
     "age": "24",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Michael Essien was the 'Bison' of Chelsea in 2006, dominating the midfield with his power and work rate.",
     "stats": { "SPE": 77, "ACC": 78, "STA": 91, "STR": 82, "CON": 81, "PAS": 83, "SHT": 75, "TAC": 86 }
   },
@@ -7618,6 +7663,9 @@
     "weight": "80kg",
     "age": "25",
     "foot": "Both",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "David Trezeguet was a lethal goal-scorer for Juventus in 2002, known for his clinical finishing ability.",
     "stats": { "SPE": 86, "ACC": 82, "STA": 83, "STR": 90, "CON": 85, "PAS": 74, "SHT": 93, "TAC": 33 }
   },
@@ -7646,6 +7694,9 @@
     "weight": "67kg",
     "age": "31",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Gianfranco Zola was a diminutive genius for Chelsea in 1997, celebrated for his dribbling and flair.",
     "stats": { "SPE": 85, "ACC": 90, "STA": 84, "STR": 66, "CON": 91, "PAS": 84, "SHT": 84, "TAC": 50 }
   },
@@ -7674,6 +7725,9 @@
     "weight": "79kg",
     "age": "28",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Emmanuel Petit provided defensive stability and passing quality for Arsenal in 1998.",
     "stats": { "SPE": 80, "ACC": 77, "STA": 90, "STR": 84, "CON": 81, "PAS": 83, "SHT": 70, "TAC": 84 }
   },
@@ -7702,6 +7756,9 @@
     "weight": "78kg",
     "age": "31",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Graeme Souness was an uncompromising midfielder for Liverpool in 1984, known for his leadership and tackling.",
     "stats": { "SPE": 76, "ACC": 75, "STA": 91, "STR": 84, "CON": 80, "PAS": 83, "SHT": 75, "TAC": 90 }
   },
@@ -7730,6 +7787,9 @@
     "weight": "78kg",
     "age": "25",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Dennis Bergkamp showcased his incredible technical prowess while at Inter in 1994.",
     "stats": { "SPE": 81, "ACC": 81, "STA": 83, "STR": 83, "CON": 92, "PAS": 83, "SHT": 90, "TAC": 46 }
   },
@@ -7758,6 +7818,9 @@
     "weight": "75kg",
     "age": "30",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Rivaldo was a creative force for AC Milan in 2002, possessing sublime ball control.",
     "stats": { "SPE": 83, "ACC": 82, "STA": 79, "STR": 83, "CON": 91, "PAS": 87, "SHT": 87, "TAC": 49 }
   },
@@ -7786,6 +7849,9 @@
     "weight": "85kg",
     "age": "30",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Marcel Desailly was an immovable object in the Chelsea defense during 1998.",
     "stats": { "SPE": 81, "ACC": 75, "STA": 86, "STR": 94, "CON": 80, "PAS": 80, "SHT": 53, "TAC": 92 }
   },
@@ -7814,6 +7880,9 @@
     "weight": "78kg",
     "age": "29",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Dennis Bergkamp flourished as a second striker for Arsenal in 1998.",
     "stats": { "SPE": 80, "ACC": 80, "STA": 83, "STR": 83, "CON": 92, "PAS": 84, "SHT": 85, "TAC": 51 }
   },
@@ -7842,6 +7911,9 @@
     "weight": "85kg",
     "age": "34",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Giorgio Chiellini was a commanding presence for Juventus in 2018.",
     "stats": { "SPE": 82, "ACC": 75, "STA": 82, "STR": 93, "CON": 80, "PAS": 80, "SHT": 57, "TAC": 92 }
   },
@@ -7870,6 +7942,9 @@
     "weight": "75kg",
     "age": "23",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Paul Gascoigne was a thrilling creative talent for Tottenham in 1990, known for his dribbling and passing.",
     "stats": { "SPE": 84, "ACC": 84, "STA": 83, "STR": 74, "CON": 92, "PAS": 85, "SHT": 85, "TAC": 53 }
   },
@@ -7898,6 +7973,9 @@
     "weight": "80kg",
     "age": "29",
     "foot": "Both",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Gabriel Batistuta was a powerhouse striker for Fiorentina in 1998, feared for his explosive shooting power.",
     "stats": { "SPE": 84, "ACC": 82, "STA": 85, "STR": 90, "CON": 85, "PAS": 79, "SHT": 92, "TAC": 43 }
   },
@@ -7926,6 +8004,9 @@
     "weight": "73kg",
     "age": "30",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Lothar Matthäus was a versatile and influential midfielder for Inter in 1991.",
     "stats": { "SPE": 81, "ACC": 81, "STA": 91, "STR": 81, "CON": 82, "PAS": 84, "SHT": 85, "TAC": 84 }
   },
@@ -7954,6 +8035,9 @@
     "weight": "75kg",
     "age": "27",
     "foot": "Left",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Rivaldo was at the peak of his powers for Barcelona in 1999, showcasing incredible skill and goal-scoring.",
     "stats": { "SPE": 86, "ACC": 84, "STA": 84, "STR": 82, "CON": 92, "PAS": 88, "SHT": 90, "TAC": 42 }
   },
@@ -7982,6 +8066,9 @@
     "weight": "75kg",
     "age": "33",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Fabio Cannavaro was an elite defender for Real Madrid in 2006, celebrated for his exceptional tackling.",
     "stats": { "SPE": 81, "ACC": 82, "STA": 88, "STR": 89, "CON": 80, "PAS": 80, "SHT": 53, "TAC": 95 }
   },
@@ -8010,6 +8097,9 @@
     "weight": "73kg",
     "age": "29",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Lothar Matthäus was a midfield general for Inter in 1990, driving the team forward with energy.",
     "stats": { "SPE": 82, "ACC": 83, "STA": 91, "STR": 82, "CON": 81, "PAS": 83, "SHT": 82, "TAC": 85 }
   }
