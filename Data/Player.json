@@ -35,5 +35,42 @@
       "SHT": 89,
       "TAC": 54
     }
+  },
+  {
+    "id": 210,
+    "popup_id": "popup-olise-210",
+    "name": "OLISE",
+    "searchName": "MICHAEL OLISE",
+    "slug": "michael-olise-legendary",
+    "card_type": "legendary",
+    "rating": 86,
+    "Position-box": "Rw.png",
+    "card-bg": "Kick26-nonmax-card.png",
+    "border": "Kick26-nonmax-border.png",
+    "rating_circle": "Nonmax-80-89.png",
+    "game-card-bg": "L-r-c.png",
+    "photo": "Olise-L.png",
+    "flag": "fr.png",
+    "star": "Kick26-star.png",
+    "club": "Bayern Munich",
+    "nationality": "France",
+    "height": "184 cm",
+    "weight": "73kg",
+    "age": "24",
+    "foot": "Left",
+    "max-card": "Kick26-max-card.png",
+    "max-border": "Kick26-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
+    "bio": "Michael Olise is a highly creative and technically gifted French winger who tears opposition defenses apart on the right flank with his mesmerizing close control and elite playmaking vision. Operating as an explosive attacking weapon for Bayern Munich, his exceptional ability to cut inside on his lethal left foot, deliver pinpoint crosses, and execute intricate key passes makes him one of the most exciting young talents in modern European football.",
+    "stats": {
+      "SPE": 85,
+      "ACC": 87,
+      "STA": 82,
+      "STR": 65,
+      "CON": 92,
+      "PAS": 91,
+      "SHT": 89,
+      "TAC": 54
+    }
   }
 ]
