@@ -8128,6 +8128,9 @@
     "weight": "80kg",
     "age": "32",
     "foot": "Both",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Gabriel Batistuta was a legendary striker, renowned for his clinical finishing and power.",
     "stats": { "SPE": 83, "ACC": 82, "STA": 83, "STR": 90, "CON": 87, "PAS": 78, "SHT": 93, "TAC": 41 }
   },
@@ -8156,6 +8159,9 @@
     "weight": "80kg",
     "age": "30",
     "foot": "Right",
+    "max-card": "Classic-max-card.png",
+    "max-border": "Classic-max-border.png",
+    "max-rating-circle": "Max-90-1000.png",
     "bio": "Dimitar Berbatov was known for his elegant touch and technical brilliance on the pitch.",
     "stats": { "SPE": 79, "ACC": 78, "STA": 76, "STR": 85, "CON": 91, "PAS": 85, "SHT": 92, "TAC": 39 }
   }
