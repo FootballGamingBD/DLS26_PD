@@ -8287,7 +8287,7 @@
     "max-border": "Dynamic-border-7.png",
     "max-rating-circle": "Max-90-1000.png",
     "bio": "Matheus Cunha brings flair and technical ability as a versatile second striker.",
-    "stats": { "SPE": 85, "ACC": 84, "STA": 82, "STR": 73, "CON": 87, "PAS": 80, "SHT": 8william: 42 }
+    "stats": { "SPE": 85, "ACC": 84, "STA": 82, "STR": 73, "CON": 87, "PAS": 80, "SHT": 84, "TAC": 42 }
   },
   {
     "id": 11004,
