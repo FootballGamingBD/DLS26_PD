@@ -46,6 +46,7 @@
     "slug": "gabriel-magalhaes-legendary",
     "card_type": "legendary",
     "rating": 85,
+    "position": "CB",
     "Position-box": "Cb.png",
     "card-bg": "Legendary-nonmax-card.png",
     "border": "Legendary-nonmax-border.png",
