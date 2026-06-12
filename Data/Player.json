@@ -12234,5 +12234,44 @@
     "max-rating-circle": "Max-80-89.png",
     "bio": "Paulo Dybala uses his elite control and deadly left foot to weave through defenses and create consistent scoring opportunities.",
     "stats": { "SPE": 74, "ACC": 85, "STA": 70, "STR": 62, "CON": 86, "PAS": 87, "SHT": 79, "TAC": 43 }
+  },
+{
+  "id": "0891",
+  "popup_id": "popup-martinez-0891",
+  "name": "MARTÍNEZ",
+  "searchName": "EMILIANO MARTÍNEZ",
+  "slug": "emiliano-martinez-legendary",
+  "card_type": "legendary",
+  "rating": 83,
+  "Position-box": "Gk.png",
+  "card-bg": "Legendary-nonmax-card.png",
+  "border": "Legendary-nonmax-border.png",
+  "rating_circle": "Nonmax-80-89.png",
+  "game-card-bg": "L-r-c-Gk.png",
+  "photo": "Emi-L.webp",
+  "flag": "ar.png",
+  "star": "Legendary-nonmax-star.png",
+  "max-star": "Legendary-max-star.png",
+  "club": "Aston Villa",
+  "nationality": "Argentina",
+  "height": "195 cm",
+  "weight": "N/A",
+  "age": "N/A",
+  "foot": "Right",
+  "max-card": "Legendary-max-card.png",
+  "max-border": "Legendary-max-border.png",
+  "max-rating-circle": "Max-90-1000.png",
+  "bio": "Emiliano Martínez is a formidable goalkeeper known for his commanding presence, incredible reflexes, and penalty-saving expertise for the Argentina national team.",
+  "stats": {
+    "SPE": 57,
+    "ACC": 54,
+    "GKR": 80,
+    "STR": 71,
+    "CON": 61,
+    "PAS": 61,
+    "GKH": 82,
+    "TAC": 44
   }
+}
+
 ]
