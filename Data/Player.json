@@ -27772,6 +27772,36 @@
     "max-rating-circle": "Max-80-89.png",
     "bio": "Pedro G. utilizes his explosive pace and close control to break past defensive lines easily.",
     "stats": { "SPE": 76, "ACC": 80, "STA": 75, "STR": 59, "CON": 82, "PAS": 83, "SHT": 82, "TAC": 54 }
+  },
+  {
+    "id": "5000505",
+    "popup_id": "popup-matheus-nunes-5000505",
+    "name": "MATHEUS N.",
+    "searchName": "MATHEUS NUNES",
+    "slug": "matheus-rare",
+    "card_type": "Rare",
+    "rating": 79,
+    "position": "RB",
+    "Position-box": "Rb.png",
+    "card-bg": "Rare-nonmax-card.png",
+    "border": "Rare-nonmax-border.png",
+    "rating_circle": "Nonmax-70-79.png",
+    "game-card-bg": "L-r-c.png",
+    "photo": "Matheusn-R.webp",
+    "flag": "pt.png",
+    "star": "Rare-nonmax-star.png",
+    "max-star": "Rare-max-star.png",
+    "club": "Manchester City",
+    "nationality": "Portugal",
+    "height": "183 cm",
+    "weight": "N/A",
+    "age": "27",
+    "foot": "Right",
+    "max-card": "Rare-max-card.png",
+    "max-border": "Rare-max-border.png",
+    "max-rating-circle": "Max-80-89.png",
+    "bio": "Matheus N. utilizes his explosive pace and close control to break past defensive lines easily.",
+    "stats": { "SPE": 91, "ACC": 77, "STA": 79, "STR": 71, "CON": 76, "PAS": 78, "SHT": 49, "TAC": 77 }
   }
   
 ]
