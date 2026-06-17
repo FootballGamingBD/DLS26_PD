@@ -28166,6 +28166,44 @@
     "age": "26",
     "foot": "Right",
     "stats": { "SPE": 67, "ACC": 71, "STA": 75, "STR": 61, "CON": 69, "PAS": 72, "SHT": 57, "TAC": 70 }
+  },
+{
+  "id": "090909",
+  "popup_id": "popup-costa-0999",
+  "name": "COSTA",
+  "searchName": "DIOGO COSTA",
+  "slug": "diogo-costa-legendary",
+  "card_type": "legendary",
+  "rating": 81,
+  "Position-box": "Gk.png",
+  "card-bg": "Legendary-nonmax-card.png",
+  "border": "Legendary-nonmax-border.png",
+  "rating_circle": "Nonmax-80-89.png",
+  "game-card-bg": "L-r-c-Gk.png",
+  "photo": "17212.webp",
+  "flag": "pt.png",
+  "star": "Legendary-nonmax-star.png",
+  "max-star": "Legendary-max-star.png",
+  "club": "FC Porto",
+  "nationality": "Portugal",
+  "height": "186 cm",
+  "weight": "86 kg",
+  "age": "26",
+  "foot": "Right",
+  "max-card": "Legendary-max-card.png",
+  "max-border": "Legendary-max-border.png",
+  "max-rating-circle": "Max-90-1000.[span_0](start_span)png",
+  "bio": "Diogo Costa is a world-class goalkeeper captaining FC Porto, widely renowned for his exceptional reflexes, composure under pressure, and remarkable penalty-saving expertise for both club and country[span_0](end_span).",
+  "stats": {
+    "SPE": 65,
+    "ACC": 64,
+    "GKR": 79,
+    "STR": 57,
+    "CON": 62,
+    "PAS": 64,
+    "GKH": 76,
+    "TAC": 48
   }
+}
   
 ]
