@@ -28452,6 +28452,46 @@
     "max-rating-circle": "Max-90-1000.png",
     "bio": "Marc Cucurella is a tenacious left-back recognized for his incredible work rate, relentless pressure, and defensive consistency.",
     "stats": { "SPE": 83, "ACC": 85, "STA": 92, "STR": 74, "CON": 82, "PAS": 87, "SHO": 62, "TAC": 89 }
+  },
+{
+  "id": 80300000,
+  "popup_id": "popup-torres-86-Classic",
+  "name": "TORRES",
+  "searchName": "FERNANDO TORRES",
+  "slug": "fernando-torres-86-Classic-2006",
+  "card_type": "Classic",
+  "rating": 86,
+  "year": "2006",
+  "year-box": "Classic-year.png",
+  "Position-box": "Cf.png",
+  "card-bg": "Classic-nonmax-card.png",
+  "border": "Classic-nonmax-border.png",
+  "rating_circle": "Nonmax-80-89.png",
+  "game-card-bg": "Special.jpg",
+  "photo": "26841.webp",
+  "flag": "es.png",
+  "star": "Classic-star.png",
+  "max-star": "Classic-star.png",
+  "club": "Atlético Madrid",
+  "nationality": "Spain",
+  "height": "180 cm",
+  "weight": "78kg",
+  "age": "22",
+  "foot": "Left",
+  "max-card": "Classic-max-card.png",
+  "max-border": "Classic-max-border.png",
+  "max-rating-circle": "Max-90-1000.png",
+  "bio": "Fernando Torres was a deadly young striker in 2006, captaining Atlético Madrid with exceptional speed and finishing before announcing himself on the world stage with 3 goals for Spain at the 2006 FIFA World Cup.",
+  "stats": {
+    "SPE": 0,
+    "ACC": 0,
+    "STA": 0,
+    "STR": 9,
+    "CON": 9,
+    "PAS": 9,
+    "SHO": 9,
+    "TAC": 9
   }
+}
 
 ]
