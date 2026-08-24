@@ -1,92 +1,46 @@
 {
   "methods": [
     {
-      "id": "legendary",
+      "id": "coins",
       "name": "Coins",
-      "card_type": "Legendary",
-      "files": [
-        "coin.png"
-      ]
+      "match": ["legendary", "rare", "common"],
+      "files": ["coin.png"]
     },
     {
-      "id": "dynamic_card",
-      "name": "Dynamic Season Pass",
-      "card_type": "Dynamic Card",
-      "files": [
-        "dynamic-agent.png"
-      ]
+      "id": "star_agent",
+      "name": "Star Agent",
+      "match": ["ds25", "ds26", "dream star", "dreamstar"],
+      "files": ["star-agent.png"]
     },
     {
-      "id": "cult_heroes",
-      "name": "Cult Heroes Season Pass",
-      "card_type": "Cult Heroes",
-      "files": [
-        "cult-heroes-season-pass.png"
-      ]
+      "id": "cult",
+      "name": "Cult Season Pass",
+      "match": ["cult"],
+      "files": ["cult-heroes-season-pass.png"]
     },
     {
       "id": "classic",
       "name": "Dream Points",
-      "card_type": "Classic",
-      "files": [
-        "dreampoints.png"
-      ]
+      "match": ["classic"],
+      "files": ["dreampoints.png"]
     },
     {
-      "id": "dream_star_25",
-      "name": "Star Agent",
-      "card_type": "Dream Star 25",
-      "files": [
-        "star-agent.png"
-      ]
+      "id": "dynamic",
+      "name": "Dynamic Agent",
+      "match": ["dynamic"],
+      "files": ["dynamic-agent.png"]
     },
     {
-      "id": "dream_star_26",
-      "name": "Star Agent",
-      "card_type": "Dream Star 26",
-      "files": [
-        "star-agent.png"
-      ]
+      "id": "kick_off",
+      "name": "Kick Off Stars Season Pass",
+      "match": ["kick off", "kick-off", "kickoff", "kickof"],
+      "files": ["kick-off-stars-season-pass.png"]
     },
     {
-      "id": "kick_off_stars",
-      "name": "Kick-Off Stars Season Pass",
-      "card_type": "Kick Off",
-      "files": [
-        "kick-off-stars-season-pass.png"
-      ]
-    },
-    {
-      "id": "rare",
+      "id": "legendary_agent",
       "name": "Legendary Agent",
-      "card_type": "Rare",
-      "files": [
-        "legendary-agent.png"
-      ]
-    },
-    {
-      "id": "common",
-      "name": "Legendary Agent",
-      "card_type": "Common",
-      "files": [
-        "legendary-agent.png"
-      ]
-    },
-    {
-      "id": "special",
-      "name": "Legendary Agent",
-      "card_type": "Special",
-      "files": [
-        "legendary-agent.png"
-      ]
-    },
-    {
-      "id": "other",
-      "name": "Legendary Agent",
-      "card_type": "Other",
-      "files": [
-        "legendary-agent.png"
-      ]
+      "match": ["champion26", "champion25", "champion", "t26", "world hero", "world-hero", "world cup hero", "world winner", "world cup winner"],
+      "files": ["legendary-agent.png"]
     }
   ]
 }
