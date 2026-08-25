@@ -1,1 +1,216 @@
-Cardcreator.json
+{
+  "folders": {
+    "bg": "Card-bg/",
+    "border": "Card-border/",
+    "year": "Year-box/",
+    "star": "Star/",
+    "rating": "Rating-circle/",
+    "position": "Position-box/",
+    "flag": "Flags/",
+    "photo": "Player-photos/",
+    "game": "game-card-bg/"
+  },
+  "ratingCircles": {
+    "nonMax": [
+      { "min": 0, "max": 59, "file": "NonMax-1-59.png" },
+      { "min": 60, "max": 69, "file": "NonMax-60-69.png" },
+      { "min": 70, "max": 79, "file": "Nonmax-70-79.png" },
+      { "min": 80, "max": 89, "file": "Nonmax-80-89.png" },
+      { "min": 90, "max": 200, "file": "Nonmax-90-1000.png" }
+    ],
+    "max": [
+      { "min": 0, "max": 59, "file": "Max-1-59.png" },
+      { "min": 60, "max": 69, "file": "Max-60-69.png" },
+      { "min": 70, "max": 79, "file": "Max-70-79.png" },
+      { "min": 80, "max": 89, "file": "Max-80-89.png" },
+      { "min": 90, "max": 200, "file": "Max-90-1000.png" }
+    ]
+  },
+  "gameFrames": {
+    "basic": "L-r-c.png",
+    "basicGk": "L-r-c-gk.png",
+    "special": "Special.jpg",
+    "specialGk": "Special.jpg"
+  },
+  "photoBox": {
+    "basic": { "x": 622, "y": 191, "size": 980 },
+    "special": { "x": 406, "y": -26, "size": 1200 }
+  },
+  "types": [
+    {
+      "id": "legendary",
+      "label": "Legendary",
+      "match": ["legendary"],
+      "group": "basic",
+      "hasMax": true,
+      "hasYear": false,
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "Legendary-nonmax-card.png", "border": "Legendary-nonmax-border.png", "star": "Legendary-nonmax-star.png" },
+      "max": { "bg": "Legendary-max-card.png", "border": "Legendary-max-border.png", "star": "Legendary-max-star.png" }
+    },
+    {
+      "id": "rare",
+      "label": "Rare",
+      "match": ["rare"],
+      "group": "basic",
+      "hasMax": true,
+      "hasYear": false,
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "Rare-nonmax-card.png", "border": "Rare-nonmax-border.png", "star": "Rare-nonmax-star.png" },
+      "max": { "bg": "Rare-max-card.png", "border": "Rare-max-border.png", "star": "Rare-max-star.png" }
+    },
+    {
+      "id": "common",
+      "label": "Common",
+      "match": ["common"],
+      "group": "basic",
+      "hasMax": true,
+      "hasYear": false,
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "Common-nonmax-card.png", "border": "Common-nonmax-border.png", "star": "Rare-nonmax-star.png" },
+      "max": { "bg": "Common-max-card.png", "border": "Common-max-border.png", "star": "Rare-max-star.png" }
+    },
+    {
+      "id": "classic",
+      "label": "Classic",
+      "match": ["classic"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Classic-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "white", "max": "black" },
+      "nonMax": { "bg": "Classic-nonmax-card.png", "border": "Classic-nonmax-border.png", "star": "Classic-star.png" },
+      "max": { "bg": "Classic-max-card.png", "border": "Classic-max-border.png", "star": "Classic-star.png" }
+    },
+    {
+      "id": "champion",
+      "label": "Champion",
+      "match": ["champion"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Champion-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "white", "max": "black" },
+      "nonMax": { "bg": "Champion-nonmax-card.png", "border": "C25-nomax-border.png", "star": "Champion-star.png" },
+      "max": { "bg": "Champion-max-card.png", "border": "Champion-max-border.png", "star": "Champion-star.png" }
+    },
+    {
+      "id": "champion26",
+      "label": "Champion 2026",
+      "match": ["champion26", "champion 2026"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Champion26-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "white" },
+      "nonMax": { "bg": "Champion26-nonmax-card.png", "border": "Champion26-nonmax-border.png", "star": "Champion26-star.png" },
+      "max": { "bg": "Champion26-max-card.png", "border": "Champion26-max-border.png", "star": "Champion26-star.png" }
+    },
+    {
+      "id": "ds25",
+      "label": "Dream Star 25",
+      "match": ["ds25", "dream star 2025", "dream star 25"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Ds25-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "white", "max": "black" },
+      "nonMax": { "bg": "Ds25-max-card.png", "border": "Ds25-nonmax-border.png", "star": "Ds25-star.png" },
+      "max": { "bg": "Ds25-max-card.png", "border": "Ds25-max-border.png", "star": "Ds25-star.png" }
+    },
+    {
+      "id": "ds26",
+      "label": "Dream Star 26",
+      "match": ["ds26", "dream star 2026", "dream star 26"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Ds26-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "Ds26-nonmax-card.png", "border": "Ds26-nonmax-border.png", "star": "Ds26-star.png" },
+      "max": { "bg": "Ds26-max-card.png", "border": "Ds26-max-border.png", "star": "Ds26-star.png" }
+    },
+    {
+      "id": "kickoff",
+      "label": "Kickoff Star",
+      "match": ["kickoff", "kick off", "kick-off", "kick26", "kick"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Kick-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "white", "max": "white" },
+      "nonMax": { "bg": "Kick26-nonmax-card.png", "border": "Kick26-nonmax-border.png", "star": "Ds26-star.png" },
+      "max": { "bg": "Kick26-max-card.png", "border": "Kick26-max-border.png", "star": "Ds26-star.png" }
+    },
+    {
+      "id": "t26",
+      "label": "Team of 2026",
+      "match": ["t26", "team of 2026", "teamof2026", "star2026", "star player"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "T26-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "white", "max": "white" },
+      "nonMax": { "bg": "T26-nonmax-card.png", "border": "T26-nonmax-border.png", "star": "T26-star.png" },
+      "max": { "bg": "T26-max-card.png", "border": "T26-max-border.png", "star": "T26-star.png" }
+    },
+    {
+      "id": "world",
+      "label": "World Cup Hero",
+      "match": ["world cup hero", "world-hero", "world hero", "world cup winner", "world winner"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "World-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "World-hero-nonmax-card.png", "border": "World-hero-nonmax-border.png", "star": "Champion26-star.png" },
+      "max": { "bg": "World-hero-max-card.png", "border": "World-hero-max-border.png", "star": "Champion26-star.png" }
+    },
+    {
+      "id": "cult",
+      "label": "Cult Heroes",
+      "match": ["cult"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "Cult-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "Cult-card.png", "border": "Classic-nonmax-border.png", "star": "Cult-star.png" },
+      "max": { "bg": "Cult-card.png", "border": "Classic-max-border.png", "star": "Cult-star.png" }
+    },
+    {
+      "id": "dynamic",
+      "label": "Dynamic Stars",
+      "match": ["dynamic"],
+      "group": "special",
+      "hasMax": false,
+      "hasYear": true,
+      "year": "Dynamic-year.png",
+      "hasLevels": true,
+      "nameColor": { "nonMax": "white", "max": "white" },
+      "nonMax": { "bg": "dynamic.png", "border": "Dynamic-border-1.png", "star": "Dynamic-star.png" },
+      "max": { "bg": "dynamic.png", "border": "Dynamic-border-7.png", "star": "Dynamic-star.png" },
+      "levels": {
+        "1": "Dynamic-border-1.png",
+        "2": "Dynamic-border-2.png",
+        "3": "Dynamic-border-3.png",
+        "4": "Dynamic-border-4.png",
+        "5": "Dynamic-border-5.png",
+        "6": "Dynamic-border-6.png",
+        "7": "Dynamic-border-7.png"
+      }
+    }
+  ]
+}
