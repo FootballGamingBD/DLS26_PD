@@ -191,6 +191,19 @@
       "max": { "bg": "Cult-card.png", "border": "Classic-max-border.png", "star": "Cult-star.png" }
     },
     {
+      "id": "seasonpass",
+      "label": "Season Pass",
+      "match": ["season"],
+      "group": "special",
+      "hasMax": true,
+      "hasYear": true,
+      "year": "season-year.png",
+      "hasLevels": false,
+      "nameColor": { "nonMax": "black", "max": "black" },
+      "nonMax": { "bg": "season-card.png", "border": "season-nonmax-border.png", "star": "season-star.png" },
+      "max": { "bg": "season-card.png", "border": "season-max-border.png", "star": "season-star.png" }
+    },
+    {
       "id": "dynamic",
       "label": "Dynamic Stars",
       "match": ["dynamic"],
