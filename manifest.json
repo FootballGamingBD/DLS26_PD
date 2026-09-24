@@ -1,0 +1,43 @@
+{
+  "background_color": "#ffffff",
+  "description": "Make your DLS 26 experience even more exciting with the DLS Manager 26 app by Football Gaming BD — a whole new gaming vibe awaits you.\n\nDLS 26 tools, player database, kits, card creator and more by Football Gaming BD",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "DLS Manager 26",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "DLSM 26",
+  "start_url": "https://www.footballgamingbd.online/",
+  "theme_color": "#6B2D8B",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Theme/Icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 1024,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://footballgamingbd.online/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "2922",
+  "categories": [
+    "games"
+  ]
+}
