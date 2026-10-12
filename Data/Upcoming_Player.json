@@ -29,14 +29,14 @@
     "max-rating-circle": "Max-90-1000.png",
     "bio": "Fernando Torres is an upcoming Classic player recently extracted from the game database. While Fernando Torres's final in-game stats are not yet confirmed, in 2006, he was a deadly young striker captaining Atlético Madrid with exceptional speed and finishing before announcing himself on the world stage with 3 goals for Spain at the 2006 FIFA World Cup.",
     "stats": {
-      "SPE": 0,
-      "ACC": 0,
-      "STA": 0,
-      "STR": 9,
-      "CON": 9,
-      "PAS": 9,
-      "SHO": 9,
-      "TAC": 9
+      "SPE": 40,
+      "ACC": 50,
+      "STA": 60,
+      "STR": 70,
+      "CON": 80,
+      "PAS": 90,
+      "SHO": 96,
+      "TAC": 100
     }
   },
   {
