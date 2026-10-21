@@ -6,6 +6,12 @@
     "club_code": "t113.png"
   },
   {
+    "id": "310",
+    "name": "RONALDO",
+    "club": "Manchester City",
+    "club_code": "t11"
+  },
+  {
     "id": "15403",
     "name": "DEMBÉLÉ",
     "club": "Paris Saint-Germain",
