@@ -9719,8 +9719,68 @@
     "SHO": 87,
     "TAC": 29
   }
-}
-
+},
+   {
+    "id": "11066",
+    "popup_id": "popup-jonny-otto-11066",
+    "name": "OTTO",
+    "searchName": "JONNY OTTO",
+    "slug": "jonny-otto-rare",
+    "card_type": "rare",
+    "rating": 70,
+    "Position-box": "Rb.png",
+    "card-bg": "Rare-nonmax-card.png",
+    "border": "Rare-nonmax-border.png",
+    "rating_circle": "Nonmax-70-79.png",
+    "game-card-bg": "R-r-c.png",
+    "photo": "11066.webp",
+    "flag": "es.png",
+    "star": "Rare-nonmax-star.png",
+    "max-star": "Rare-max-star.png",
+    "nationality": "Spain",
+    "nationality_code": "t10.png",
+    "height": "175 cm",
+    "weight": "70 kg",
+    "age": "32",
+    "foot": "Both",
+    "coin": "695",
+    "max-card": "Rare-max-card.png",
+    "max-border": "Rare-max-border.png",
+    "max-rating-circle": "Max-80-89.png",
+    "bio": "Jonny Otto is a Spanish right-back for Alavés.",
+    "stats": { "SPE": 66, "ACC": 71, "STA": 70, "STR": 65, "CON": 69, "PAS": 69, "SHO": 41, "TAC": 70 }
+  },
+   {
+    "id": "25088",
+    "popup_id": "popup-topi-keskinen-25088",
+    "name": "KESKINEN",
+    "searchName": "TOPI KESKINEN",
+    "slug": "topi-keskinen-common",
+    "card_type": "common",
+    "rating": 63,
+    "Position-box": "Lm.png",
+    "card-bg": "Common-nonmax-card.png",
+    "border": "Common-nonmax-border.png",
+    "rating_circle": "Nonmax-60-69.png",
+    "game-card-bg": "C-r-c.png",
+    "photo": "25088.webp",
+    "flag": "fi.png",
+    "star": "Common-nonmax-star.png",
+    "max-star": "Common-max-star.png",
+    "nationality": "Finland",
+    "nationality_code": "t390.png",
+    "height": "180 cm",
+    "weight": "72 kg",
+    "age": "23",
+    "foot": "Both",
+    "coin": "280",
+    "max-card": "Common-max-card.png",
+    "max-border": "Common-max-border.png",
+    "max-rating-circle": "Max-70-79.png",
+    "bio": "Topi Keskinen is a Finnish left midfielder for Aberdeen.",
+    "stats": { "SPE": 73, "ACC": 74, "STA": 58, "STR": 57, "CON": 60, "PAS": 55, "SHO": 56, "TAC": 24 }
+  }
+ 
 
 
 ]
