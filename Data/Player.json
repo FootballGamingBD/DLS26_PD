@@ -32519,6 +32519,37 @@
     "max-rating-circle": "Max-70-79.png",
     "bio": "Dimitar Mitov is a Bulgarian goalkeeper for Aberdeen.",
     "stats": { "SPE": 48, "ACC": 46, "GKR": 60, "STR": 63, "CON": 48, "PAS": 48, "GKH": 59, "TAC": 38 }
+  },
+  
+  {
+    "id": "22569693",
+    "popup_id": "popup-dimitar-mahi-22569693",
+    "name": "Mahi",
+    "searchName": "DIMITAR MITOV",
+    "slug": "dimitar-mahi-common",
+    "card_type": "common",
+    "rating": 63,
+    "Position-box": "Gk.png",
+    "card-bg": "Common-nonmax-card.png",
+    "border": "Common-nonmax-border.png",
+    "rating_circle": "Nonmax-60-69.png",
+    "game-card-bg": "C-r-c.png",
+    "photo": "22503.webp",
+    "flag": "bg.png",
+    "star": "Common-nonmax-star.png",
+    "max-star": "Common-max-star.png",
+    "nationality": "Bulgaria",
+    "nationality_code": "t400.png",
+    "height": "188 cm",
+    "weight": "76 kg",
+    "age": "29",
+    "foot": "Right",
+    "coin": "0",
+    "max-card": "Common-max-card.png",
+    "max-border": "Common-max-border.png",
+    "max-rating-circle": "Max-70-79.png",
+    "bio": "Dimitar Mitov is a Bulgarian goalkeeper for Aberdeen.",
+    "stats": { "SPE": 48, "ACC": 46, "GKR": 60, "STR": 63, "CON": 48, "PAS": 48, "GKH": 59, "TAC": 38 }
   }
 
 
