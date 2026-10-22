@@ -22168,7 +22168,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Yanis Senhadji is a Spanish centre-forward for Betis in Dream League Soccer 2026.",
-    "stats": { "SPE": 65, "ACC": 63, "GKR": 52, "STR": 57, "CON": 56, "PAS": 54, "GKH": 59, "TAC": 17 }
+    "stats": { "SPE": 65, "ACC": 63, "STA": 52, "STR": 57, "CON": 56, "PAS": 54, "SHO": 59, "TAC": 17 }
   },
   {
     "id": "25922",
@@ -22978,7 +22978,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Tiago Freitas is a Portuguese central midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 59, "ACC": 57, "GKR": 51, "STR": 52, "CON": 54, "PAS": 53, "GKH": 44, "TAC": 46 }
+    "stats": { "SPE": 59, "ACC": 57, "STA": 51, "STR": 52, "CON": 54, "PAS": 53, "SHO": 44, "TAC": 46 }
   },
   {
     "id": "26983",
@@ -23008,7 +23008,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "João Veloso is a Portuguese central midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 57, "ACC": 56, "GKR": 53, "STR": 55, "CON": 56, "PAS": 57, "GKH": 39, "TAC": 51 }
+    "stats": { "SPE": 57, "ACC": 56, "STA": 53, "STR": 55, "CON": 56, "PAS": 57, "SHO": 39, "TAC": 51 }
   },
   {
     "id": "27700",
@@ -23038,7 +23038,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "José Neto is a Portuguese left-back for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 63, "ACC": 63, "GKR": 52, "STR": 55, "CON": 52, "PAS": 53, "GKH": 34, "TAC": 50 }
+    "stats": { "SPE": 63, "ACC": 63, "STA": 52, "STR": 55, "CON": 52, "PAS": 53, "SHO": 34, "TAC": 50 }
   },
   {
     "id": "25958",
@@ -23068,7 +23068,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Diogo Prioste is a Portuguese central midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 65, "ACC": 60, "GKR": 54, "STR": 58, "CON": 57, "PAS": 58, "GKH": 52, "TAC": 30 }
+    "stats": { "SPE": 65, "ACC": 60, "STA": 54, "STR": 58, "CON": 57, "PAS": 58, "SHO": 52, "TAC": 30 }
   },
   {
     "id": "27550",
@@ -23098,7 +23098,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Rodrigo Rêgo is a Portuguese right winger for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 71, "ACC": 69, "GKR": 55, "STR": 52, "CON": 58, "PAS": 53, "GKH": 50, "TAC": 15 }
+    "stats": { "SPE": 71, "ACC": 69, "STA": 55, "STR": 52, "CON": 58, "PAS": 53, "SHO": 50, "TAC": 15 }
   },
   {
     "id": "27548",
@@ -23128,7 +23128,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Anísio Cláudio Fernandes Reis Cabral is a Portuguese centre-forward for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 64, "ACC": 60, "GKR": 53, "STR": 60, "CON": 56, "PAS": 55, "GKH": 60, "TAC": 19 }
+    "stats": { "SPE": 64, "ACC": 60, "STA": 53, "STR": 60, "CON": 56, "PAS": 55, "SHO": 60, "TAC": 19 }
   },
   {
     "id": "21828",
@@ -23158,7 +23158,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Joshua Wynder is an American centre-back for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 64, "ACC": 63, "GKR": 55, "STR": 66, "CON": 52, "PAS": 52, "GKH": 36, "TAC": 60 }
+    "stats": { "SPE": 64, "ACC": 63, "STA": 55, "STR": 66, "CON": 52, "PAS": 52, "SHO": 36, "TAC": 60 }
   },
   {
     "id": "25408",
@@ -23188,7 +23188,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "João Rêgo is a Portuguese attacking midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 62, "ACC": 62, "GKR": 55, "STR": 53, "CON": 64, "PAS": 62, "GKH": 53, "TAC": 32 }
+    "stats": { "SPE": 62, "ACC": 62, "STA": 55, "STR": 53, "CON": 64, "PAS": 62, "SHO": 53, "TAC": 32 }
   },
   {
     "id": "25959",
@@ -23218,7 +23218,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Nuno Félix is a Portuguese defensive midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 65, "ACC": 60, "GKR": 57, "STR": 59, "CON": 58, "PAS": 56, "GKH": 46, "TAC": 55 }
+    "stats": { "SPE": 65, "ACC": 60, "STA": 57, "STR": 59, "CON": 58, "PAS": 56, "SHO": 46, "TAC": 55 }
   },
   {
     "id": "20536",
@@ -23248,7 +23248,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Henrique Araújo is a Portuguese centre-forward for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 68, "ACC": 67, "GKR": 63, "STR": 65, "CON": 58, "PAS": 61, "GKH": 62, "TAC": 40 }
+    "stats": { "SPE": 68, "ACC": 67, "STA": 63, "STR": 65, "CON": 58, "PAS": 61, "SHO": 62, "TAC": 40 }
   },
   {
     "id": "20534",
@@ -23308,7 +23308,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Manu Silva is a Portuguese defensive midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 63, "ACC": 58, "GKR": 68, "STR": 75, "CON": 64, "PAS": 68, "GKH": 39, "TAC": 68 }
+    "stats": { "SPE": 63, "ACC": 58, "STA": 68, "STR": 75, "CON": 64, "PAS": 68, "SHO": 39, "TAC": 68 }
   },
   {
     "id": "26308",
@@ -23338,7 +23338,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Sidny Cabral is a Cape Verdean right-back for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 72, "ACC": 75, "GKR": 62, "STR": 52, "CON": 65, "PAS": 63, "GKH": 50, "TAC": 58 }
+    "stats": { "SPE": 72, "ACC": 75, "STA": 62, "STR": 52, "CON": 65, "PAS": 63, "SHO": 50, "TAC": 58 }
   },
   {
     "id": "23996",
@@ -23368,7 +23368,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Gianluca Prestianni is an Argentine right midfielder for Benfica in Dream League Soccer 2026.",
-    "stats": { "SPE": 78, "ACC": 83, "GKR": 57, "STR": 57, "CON": 70, "PAS": 59, "GKH": 58, "TAC": 27 }
+    "stats": { "SPE": 78, "ACC": 83, "ATA": 57, "STR": 57, "CON": 70, "PAS": 59, "SHO": 58, "TAC": 27 }
   },
   {
     "id": "25012",
@@ -23878,7 +23878,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Nathan De Cat is a Belgian central midfielder for Belgium in Dream League Soccer 2026.",
-    "stats": { "SPE": 61, "ACC": 57, "GKR": 68, "STR": 65, "CON": 64, "PAS": 69, "GKH": 48, "TAC": 65 }
+    "stats": { "SPE": 61, "ACC": 57, "STA": 68, "STR": 65, "CON": 64, "PAS": 69, "SHO": 48, "TAC": 65 }
   },
   {
     "id": "27221",
@@ -23908,7 +23908,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Romeo Vermant is a Belgian centre-forward for Belgium in Dream League Soccer 2026.",
-    "stats": { "SPE": 74, "ACC": 73, "GKR": 65, "STR": 68, "CON": 65, "PAS": 65, "GKH": 69, "TAC": 17 }
+    "stats": { "SPE": 74, "ACC": 73, "STA": 65, "STR": 68, "CON": 65, "PAS": 65, "SHO": 69, "TAC": 17 }
   },
   {
     "id": "10732",
@@ -24568,7 +24568,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Guille Fernández is a Spanish central midfielder for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 58, "ACC": 58, "GKR": 51, "STR": 53, "CON": 55, "PAS": 55, "GKH": 41, "TAC": 51 }
+    "stats": { "SPE": 58, "ACC": 58, "STA": 51, "STR": 53, "CON": 55, "PAS": 55, "SHO": 41, "TAC": 51 }
   },
   {
     "id": "27284",
@@ -24598,7 +24598,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Juan Hernández is a Spanish attacking midfielder for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 63, "ACC": 68, "GKR": 50, "STR": 49, "CON": 55, "PAS": 52, "GKH": 47, "TAC": 30 }
+    "stats": { "SPE": 63, "ACC": 68, "STA": 50, "STR": 49, "CON": 55, "PAS": 52, "SHO": 47, "TAC": 30 }
   },
   {
     "id": "25430",
@@ -24628,7 +24628,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Toni Fernández is a Spanish right winger for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 65, "ACC": 65, "GKR": 51, "STR": 51, "CON": 59, "PAS": 53, "GKH": 54, "TAC": 17 }
+    "stats": { "SPE": 65, "ACC": 65, "STA": 51, "STR": 51, "CON": 59, "PAS": 53, "SHO": 54, "TAC": 17 }
   },
   {
     "id": "27285",
@@ -24658,7 +24658,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Tommy Marqués is a Spanish defensive midfielder for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 60, "ACC": 63, "GKR": 55, "STR": 54, "CON": 55, "PAS": 51, "GKH": 41, "TAC": 50 }
+    "stats": { "SPE": 60, "ACC": 63, "STA": 55, "STR": 54, "CON": 55, "PAS": 51, "SHO": 41, "TAC": 50 }
   },
   {
     "id": "27286",
@@ -24688,7 +24688,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-60-69.png",
     "bio": "Xavi Espart is a Spanish right-back for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 65, "ACC": 68, "GKR": 53, "STR": 52, "CON": 53, "PAS": 52, "GKH": 35, "TAC": 53 }
+    "stats": { "SPE": 65, "ACC": 68, "STA": 53, "STR": 52, "CON": 53, "PAS": 52, "SHO": 35, "TAC": 53 }
   },
   {
     "id": "26791",
@@ -24718,7 +24718,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Jofre Torrents is a Spanish left-back for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 63, "ACC": 68, "GKR": 55, "STR": 51, "CON": 57, "PAS": 59, "GKH": 31, "TAC": 56 }
+    "stats": { "SPE": 63, "ACC": 68, "STA": 55, "STR": 51, "CON": 57, "PAS": 59, "SHO": 31, "TAC": 56 }
   },
   {
     "id": "21630",
@@ -24748,7 +24748,7 @@
     "max-border": "Common-max-border.png",
     "max-rating-circle": "Max-70-79.png",
     "bio": "Óscar Ureña is a Dominican right winger for Barcelona in Dream League Soccer 2026.",
-    "stats": { "SPE": 69, "ACC": 68, "GKR": 59, "STR": 49, "CON": 59, "PAS": 56, "GKH": 57, "TAC": 16 }
+    "stats": { "SPE": 69, "ACC": 68, "STA": 59, "STR": 49, "CON": 59, "PAS": 56, "SHO": 57, "TAC": 16 }
   },
   {
     "id": "19886",
@@ -32496,7 +32496,7 @@
     "name": "MITOV",
     "searchName": "DIMITAR MITOV",
     "slug": "dimitar-mitov-common",
-    "card_type": "Common",
+    "card_type": "common",
     "rating": 63,
     "Position-box": "Gk.png",
     "card-bg": "Common-nonmax-card.png",
