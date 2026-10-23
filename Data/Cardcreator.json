@@ -201,7 +201,7 @@
       "hasLevels": false,
       "nameColor": { "nonMax": "black", "max": "black" },
       "nonMax": { "bg": "seasonpass-nonmax-card.png", "border": "season-border.png", "star": "seasonpass-star.png" },
-      "max": { "bg": "seasonpass-card.png", "border": "season-border.png", "star": "seasonpass-star.png" }
+      "max": { "bg": "seasonpass-max-card.png", "border": "season-border.png", "star": "seasonpass-star.png" }
     },
     {
       "id": "dynamic",
