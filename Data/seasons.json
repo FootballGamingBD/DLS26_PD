@@ -1,0 +1,81 @@
+[
+  {
+    "seasonId": "october-2026",
+    "name": "October (Club League)",
+    "status": "active",
+    "startDate": "2026-10-16T00:00:00",
+    "endDate": "2026-10-26T23:59:59",
+    "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/october.png",
+    "themeColor": "#7c3aed",
+    "secondaryColor": "#c084fc",
+    "tiers": [
+      {
+        "tier": 1,
+        "freePass": { "name": "20 Coins", "amount": "20", "icon": "coin.png" },
+        "seasonPass": {
+          "isChoice": true,
+          "options": [
+            { "name": "500 Coins", "amount": "500", "icon": "coin.png" },
+            { "name": "20 Gems", "amount": "20", "icon": "gem.png" }
+          ]
+        }
+      },
+      {
+        "tier": 2,
+        "freePass": { "name": "Rare DP Boost", "amount": "1", "icon": "rare-dp-boost.png" },
+        "seasonPass": {
+          "isChoice": true,
+          "options": [
+            { "name": "25 Gems", "amount": "25", "icon": "gem.png" },
+            { "name": "Legendary DP Boost", "amount": "1", "icon": "leg-dp-boost.png" }
+          ]
+        }
+      },
+      {
+        "tier": 3,
+        "freePass": { "name": "Common Scout", "amount": "1", "icon": "common-scout.png" },
+        "seasonPass": {
+          "isChoice": true,
+          "options": [
+            { "name": "150 Coins", "amount": "150", "icon": "coin.png" },
+            { "name": "Legendary Physio", "amount": "1", "icon": "leg-physio.png" }
+          ]
+        }
+      }
+      // নোট: হুবহু গেমের মতো ২১টি ধাপ পর্যন্ত এখানে এভাবেই সাজাতে পারবেন।
+    ]
+  },
+  {
+    "seasonId": "halloween-2026",
+    "name": "Halloween",
+    "status": "upcoming",
+    "startDate": "2026-10-26T00:00:00",
+    "endDate": "2026-11-05T23:59:59",
+    "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/halloween.png",
+    "themeColor": "#9333ea",
+    "secondaryColor": "#f97316",
+    "tiers": []
+  },
+  {
+    "seasonId": "international-break-2026",
+    "name": "International Break",
+    "status": "upcoming",
+    "startDate": "2026-11-05T00:00:00",
+    "endDate": "2026-11-15T23:59:59",
+    "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/intl.png",
+    "themeColor": "#2563eb",
+    "secondaryColor": "#38bdf8",
+    "tiers": []
+  },
+  {
+    "seasonId": "november-2026",
+    "name": "November",
+    "status": "upcoming",
+    "startDate": "2026-11-15T00:00:00",
+    "endDate": "2026-11-25T23:59:59",
+    "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/november.png",
+    "themeColor": "#be123c",
+    "secondaryColor": "#fb7185",
+    "tiers": []
+  }
+    ]
