@@ -6,8 +6,8 @@
     "startDate": "2026-10-16T00:00:00",
     "endDate": "2026-10-26T23:59:59",
     "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/october.png",
-    "themeColor": "#581c87",
-    "secondaryColor": "#9333ea",
+    "themeColor": "#7c3aed",
+    "secondaryColor": "#c084fc",
     "tiers": [
       {
         "tier": 1,
@@ -123,8 +123,8 @@
     "startDate": "2026-10-26T00:00:00",
     "endDate": "2026-11-05T23:59:59",
     "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/halloween.png",
-    "themeColor": "#14532d",
-    "secondaryColor": "#16a34a",
+    "themeColor": "#15803d",
+    "secondaryColor": "#4ade80",
     "tiers": [
       {
         "tier": 1,
@@ -240,8 +240,8 @@
     "startDate": "2026-11-05T00:00:00",
     "endDate": "2026-11-15T23:59:59",
     "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/intl.png",
-    "themeColor": "#1e3a8a",
-    "secondaryColor": "#3b82f6",
+    "themeColor": "#1d4ed8",
+    "secondaryColor": "#60a5fa",
     "tiers": [
       {
         "tier": 1,
@@ -357,8 +357,8 @@
     "startDate": "2026-11-15T00:00:00",
     "endDate": "2026-11-25T23:59:59",
     "banner": "https://cdn.jsdelivr.net/gh/FootballGamingBD/DLS26_PD@main/Assets/banners/november.png",
-    "themeColor": "#831843",
-    "secondaryColor": "#e11d48",
+    "themeColor": "#b91c1c",
+    "secondaryColor": "#f87171",
     "tiers": [
       {
         "tier": 1,
@@ -453,7 +453,7 @@
       {
         "tier": 19,
         "freePass": { "name": "Common Special Coach", "amount": "1", "icon": "common-special-coach.png" },
-        "seasonPass": { "isChoice":io = true, "options": [ { "name": "Common Special Coach", "amount": "1", "icon": "common-special-coach.png" }, { "name": "Legendary Scout", "amount": "1", "icon": "leg-scout.png" } ] }
+        "seasonPass": { "isChoice": true, "options": [ { "name": "Common Special Coach", "amount": "1", "icon": "common-special-coach.png" }, { "name": "Legendary Scout", "amount": "1", "icon": "leg-scout.png" } ] }
       },
       {
         "tier": 20,
