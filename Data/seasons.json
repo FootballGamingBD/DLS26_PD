@@ -194,7 +194,16 @@
       {
         "tier": 14,
         "freePass": { "name": "Rare DP Boost", "amount": "1", "icon": "rare-dp-boost.png" },
-        "seasonPass": { "isChoice": true, "options": [ { "name": "125 Gems", "amount": "125", "icon": "gem.png" }, { "name": "Legendary Agent", "amount": "1", "icon": "leg-agent.png" } ] }
+        "seasonPass": {
+          "isSpotlight": true,
+          "spotlight": {
+            "name": "Nico Paz",
+            "rating": 82,
+            "position": "CM",
+            "icon": "nico-paz.png",
+            "label": "SPOTLIGHT PLAYER"
+          }
+        }
       },
       {
         "tier": 15,
