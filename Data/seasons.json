@@ -197,9 +197,9 @@
         "seasonPass": {
           "isSpotlight": true,
           "spotlight": {
-            "name": "",
-            "rating": ,
-            "position": "",
+            "name": " ",
+            "rating":  ,
+            "position": " ",
             "icon": "nico-paz.png",
             "label": "SPOTLIGHT PLAYER"
           }
