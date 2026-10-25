@@ -197,9 +197,9 @@
         "seasonPass": {
           "isSpotlight": true,
           "spotlight": {
-            "name": "PAZ",
+            "name": "Nico Paz",
             "rating": 83,
-            "position": "AM",
+            "position": "CM",
             "icon": "nico-paz.png",
             "label": "SPOTLIGHT PLAYER"
           }
